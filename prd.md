@@ -12,13 +12,10 @@ The primary scope of this product is to allow youth to track the progress of the
 The target users of this product are limited to youth and mentors in 4-H in the State of Oregon.
 
 ## Use Cases
-Users will log purchases made for their project. The user will download a budget report to see all purchases made for the project. 
-
-Users will track projects over time to build up a resume. Users will download and print resumes to show off skills they have learned and to report project histories. 
-
-Users will log volunteer hours and divide the hours into proper categories. The users will see these logged hours in the proper table on the resume. 
-
-Mentors will review mentee reports and give feedback.
+- Users will log purchases made for their project. The user will download a budget report to see all purchases made for the project. 
+- Users will track projects over time to build up a resume. Users will download and print resumes to show off skills they have learned and to report project histories. 
+- Users will log volunteer hours and divide the hours into proper categories. The users will see these logged hours in the proper table on the resume. 
+- Mentors will review mentee reports and give feedback.
 
 ## Purpose and Vision (Background)
 Our purpose is to develop a reporting platform that allows users to track the progress of their projects and items for their 4-H Resume. The product will allow users to export their logged data and create automatically formatted reports at any given time. Items for the 4-H Resume that can be logged are hours and experiences for things like volunteer hours, leadership hours, and club involvement. The end goal of this product would be to develop a platform that works for any 4-H project, regardless of project type.
@@ -113,6 +110,21 @@ This appears to be the only application available, but it was recommended at the
 - As a youth, I should be able to log into my individual youth account, so that I can access my individual information.
 - As a mentor, I want to see my youth’s reports, so that I can track their progress and give them feedback when needed.
 
+#### General Animal Science Record
+- As a youth, I should be able to log my Animal Inventory, so that it shows up in my 4-H project.
+- As a youth, I should be able to log my Equipment Inventory, so that it shows up in my 4-H project.
+- As a youth, I should be able to log my Supplies Inventory, so that it shows up in my 4-H project.
+- As a youth, I should be able to log my Feed Inventory, so that it shows up in my 4-H project.
+- As a youth, I should be able to log Expenses, so that it shows up in my 4-H project.
+- As a youth, I should be able to log data about what is being fed to my animals, so that it shows up in my 4-H project.
+- As a youth, I should be able to log Income, so that it shows up in my 4-H project.
+- As a youth, I should be able to log my Financial Summary, so that it shows up in my 4-H project.
+- As a youth, I should be able to print an automatically generated 4-H Animal Science Record, so that I can hand it in during fair.
+- As a youth I should be able to log into my individual youth account, so that I can access information about my project.
+- As a mentor, I want to see my youth’s project reports, so that I  can track their progress and give them feedback when needed.
+
+
+
 | User Story | Feature | Priority | GitHub Issue | Dependencies |
 | ------ | ------ | ------ | ------ | ------ |
 | As a youth, I should be able to log 4-H Club Involvement, so that it shows up in my 4-H Resume. | 4-H Resume Reporting | High | N/A | Logging and Automatic Report Generation |
@@ -126,6 +138,17 @@ This appears to be the only application available, but it was recommended at the
 | As a youth, I should be able to print an automatically generated 4-H Resume, so I can hand it in during fair. | 4-H Resume Reporting | High | N/A | Logging and Automatic Report Generation |
 | As a youth, I should be able to log into my individual youth account, so that I can access my individual information. | User Profile | High | N/A | Authentication and User services |
 | As a mentor, I want to see my youth’s reports, so that I can track their progress and give them feedback when needed. | Reporting | Medium | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log my Animal Inventory, so that it shows up in my 4-H project. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log my Equipment Inventory, so that it shows up in my 4-H project. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log my Supplies Inventory, so that it shows up in my 4-H project. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log my Feed Inventory, so that it shows up in my 4-H project. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log Expenses, so that it shows up in my 4-H project. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log data about what is being fed to my animals, so that it shows up in my 4-H project. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log Income, so that it shows up in my 4-H project. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log my Financial Summary, so that it shows up in my 4-H project. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to print an automatically generated 4-H Animal Science Record, so that I can hand it in during fair. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth I should be able to log into my individual youth account, so that I can access information about my project. | User Profile | High | N/A | Authentication and User Services |
+| As a mentor, I want to see my youth’s project reports, so that I  can track their progress and give them feedback when needed. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
 
 
 ### Non-Functional Requirements
