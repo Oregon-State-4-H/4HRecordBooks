@@ -115,22 +115,17 @@ This appears to be the only application available, but it was recommended at the
 
 | User Story | Feature | Priority | GitHub Issue | Dependencies |
 | ------ | ------ | ------ | ------ | ------ |
-| As a youth, I should be able to log 4-H Club Involvement, so that it shows up in my 4-H Resume. | Reporting | High | N/A | Logging and Automatic Report Generation |
-| As a youth, I should be able to log 4-H Projects, so that it shows up in my 4-H Resume. | Reporting | High | N/A | Logging and Automatic Report Generation |
-| As a youth, I should be able to log Event/Activity Participation, so that it shows up in my 4-H Resume. | Reporting | High | N/A | Logging and Automatic Report Generation |
-| As a youth, I should be able to log Leadership Roles, so that it shows up in my 4-H Resume. | Reporting | High | N/A | Logging and Automatic Report Generation |
-| As a youth, I should be able to log Community Service, so that it shows up in my 4-H Resume. | Reporting | High | N/A | Logging and Automatic Report Generation |
-| As a youth, I should be able to log Communications, so that it shows up in my 4-H Resume. | Reporting | High | N/A | Logging and Automatic Report Generation |
-| As a youth, I should be able to log Contests/Competitions, so that it shows up in my 4-H Resume. | Reporting | High | N/A | Logging and Automatic Report Generation |
-| As a youth, I should be able to log Recognitions, so that it shows up in my 4-H Resume. | Reporting | High | N/A | Logging and Automatic Report Generation |
-| As a youth, I should be able to print an automatically generated 4-H Resume, so I can hand it in during fair. | Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log 4-H Club Involvement, so that it shows up in my 4-H Resume. | 4-H Resume Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log 4-H Projects, so that it shows up in my 4-H Resume. | 4-H Resume Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log Event/Activity Participation, so that it shows up in my 4-H Resume. | 4-H Resume Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log Leadership Roles, so that it shows up in my 4-H Resume. | 4-H Resume Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log Community Service, so that it shows up in my 4-H Resume. | 4-H Resume Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log Communications, so that it shows up in my 4-H Resume. | 4-H Resume Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log Contests/Competitions, so that it shows up in my 4-H Resume. | 4-H Resume Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to log Recognitions, so that it shows up in my 4-H Resume. | 4-H Resume Reporting | High | N/A | Logging and Automatic Report Generation |
+| As a youth, I should be able to print an automatically generated 4-H Resume, so I can hand it in during fair. | 4-H Resume Reporting | High | N/A | Logging and Automatic Report Generation |
 | As a youth, I should be able to log into my individual youth account, so that I can access my individual information. | User Profile | High | N/A | Authentication and User services |
 | As a mentor, I want to see my youth’s reports, so that I can track their progress and give them feedback when needed. | Reporting | Medium | N/A | Logging and Automatic Report Generation |
-
-
-
-
-
 
 
 ### Non-Functional Requirements
@@ -147,7 +142,14 @@ This appears to be the only application available, but it was recommended at the
 - The app must take users with disabilities into consideration.
 
 ### Data Requirements
-Enter section text
+| Youth Information | Mentor Information |
+| ------ | ------ |
+| <ul><li>First name<li>Last name<li>Birthday<li>4-H association<li>Gender<li>Project List<li>Email<li>Phone number<li>Parent contact information </ul> | <li>First name<li>Last name<li>4-H association<li>Gender<li>Project<li>List (associated by youth)<li>Email<li>Phone number </ul>|
+
+| Project | Livestock | Product Purchase |
+| ------ | ------ | ------ |
+| <ul><li>Associated youth<li>Associated mentor<li>Project type</ul>| <ul><li>Associated project<li>Animal type<li>Name<li>Photo </ul>| <ul><li>Associated project<li>Product name<li>Product UPC<li>Quantity<li>Cost<li>Purchase type </ul>|
+
 
 ### Integration Requirements
 - An API will be used to connect to the MongoDB database.
@@ -156,26 +158,43 @@ Enter section text
 
 
 ### User Interaction and Design
-Add diagrams and sketches
+![UI1](UI1.jpeg)
+![UI2](UI2.png)
+![UI3](UI3.jpeg)
 
 ## Milestones and Timeline
 ### Fall Term
-Enter section text
+- Project research/documentation (3 weeks)
+- Setup project workspace (1 week)
+- Learn React/NextJS (3 weeks)
+- Create local database/backend APIs (2 week)
+- Create logging app prototype (3 weeks)
+    - Requires React/NextJS knowledge and backend API
+    - Prototype basic auto generating report
 
 ### Winter Term
-Enter section text
+- Convert report to required template docs (3 weeks)
+- Finish app UI (5 weeks)
+- Finish auto report generation
+    - Templates must be converted
+- Start alpha/beta testing (2 weeks)
+    - App UI is finished and so is auto report generation
 
 ### Spring Term
-Enter section text
+- Beta/final testing (2 weeks)
+- Complete product (3 weeks)
+- Finish product documentation (3 weeks)
+- Create public documentation (1 week)
+- OSU Project fair prep/present (2 weeks)
+
 
 ## Goals and Success Metrics
-| Goal | Metric | Baseline | Target |
-| ------ | ------ | ------ | ------ |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| Goal | Metric | Baseline | Target | Tracking Method |
+| ------ | ------ | ------ | ------ | ------ |
+| Resource Efficient UI | Average session load time | TBD | < 1 second | App metrics |
+| Application users | Number of users in the last 30 days | TBD | > 1000 monthly users | App metrics |
+| Timely reporting | Average time to produce a report | TBD | < 3 seconds | App metrics |
+| Streamline Project Management for 4-H Students | Average time saved by students using the app | TBD | 20% reduction | Analytics and Surveys |
 
 
 
