@@ -6,30 +6,6 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-
-
-
-  /* Light theme colors */
-  --brand-primary: #339966;
-  --brand-secondary: #39d2c0;
-  --brand-tertiary: #ee8b60;
-  --brand-alternate: #e0e3e7;
-
-  --text-primary: #14181b;
-  --text-secondary: #57636c;
-
-  --background-primary: #f1f4f8;
-  --background-secondary: #ffffff;
-
-  --accent-primary: #4C4B39EF;
-  --accent-secondary: #4d39d2c0;
-  --accent-tertiary: #4dee8b60;
-  --accent-quaternary: #ccffffff;
-
-  --semantic-success: #249689;
-  --semantic-warning: #f9cf58;
-  --semantic-error: #ff5963;
-  --semantic-info: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,28 +13,6 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-
-    /* Dark theme colors */
-    --brand-primary: #339966;
-    --brand-secondary: #39d2c0;
-    --brand-tertiary: #ee8b60;
-    --brand-alternate: #262d34;
-  
-    --text-primary: #14181b;
-    --text-secondary: #57636c;
-  
-    --background-primary: #f1f4f8;
-    --background-secondary: #ffffff;
-  
-    --accent-primary: #4C4B39EF;
-    --accent-secondary: #4d39d2c0;
-    --accent-tertiary: #4dee8b60;
-    --accent-quaternary: #b2262d34;
-  
-    --semantic-success: #249689;
-    --semantic-warning: #f9cf58;
-    --semantic-error: #ff5963;
-    --semantic-info: #ffffff;
   }
 }
 
@@ -70,4 +24,53 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+nav {
+  @apply bg-primary;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  
+  @media (max-width: 480px) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.navGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media (max-width: 480px) {
+    justify-content: space-evenly;
+    flex: 1;
+  }
+}
+
+.navItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.navTitle {
+  @media (max-width: 480px) {
+    visibility: collapse;
+  }
+}
+
+.navIcon {
+  @apply text-2xl;
+  /* @media (max-width: 480px) {
+    @apply text-2xl;
+  } */
 }
