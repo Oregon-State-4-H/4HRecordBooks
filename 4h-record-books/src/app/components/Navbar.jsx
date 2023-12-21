@@ -1,9 +1,15 @@
 import Link from 'next/link'
-import { MdContentPaste, MdOutlineDescription, MdOutlineHome } from "react-icons/md"
+import { MdContentPaste, MdOutlineDescription, MdOutlineHome, MdOutlineAccountCircle } from "react-icons/md"
 
 export default function Navbar(){
   return (
     <nav>
+
+      <div className='navTitle'>
+        <h1>4-H Record Books</h1>
+      </div>
+
+
       <div className='navGroup'>
         <Link href="/" className='navItem'>
           <MdOutlineHome className='navIcon'/>
@@ -18,6 +24,11 @@ export default function Navbar(){
         <Link href="/projects" className='navItem'>
           <MdContentPaste className='navIcon'/>
           My Projects
+        </Link>
+
+        <Link href="/account" className='navItem'>
+          <MdOutlineAccountCircle className='navIcon'/>
+          Account
         </Link>
       </div>
     </nav>

@@ -30,7 +30,7 @@ nav {
   @apply bg-primary;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   
   @media (max-width: 480px) {
@@ -64,13 +64,10 @@ nav {
 
 .navTitle {
   @media (max-width: 480px) {
-    visibility: collapse;
+    display: none;
   }
 }
 
 .navIcon {
   @apply text-2xl;
-  /* @media (max-width: 480px) {
-    @apply text-2xl;
-  } */
 }
