@@ -1,5 +1,5 @@
 import { Font } from "@react-pdf/renderer";
-import localFont from '@next/font/local'
+import localFont from "next/font/local"
 
 // OSU Fonts
 var Stratum2LightPath = "./Stratum2-Light.otf";
