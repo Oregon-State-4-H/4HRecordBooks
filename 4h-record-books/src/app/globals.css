@@ -63,6 +63,7 @@ nav {
 }
 
 .navTitle {
+  padding-left: 10px;
   @media (max-width: 480px) {
     display: none;
   }

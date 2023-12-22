@@ -1,12 +1,5 @@
-// styles
-import { Inter } from 'next/font/google'
 import './globals.css'
-
-// components
-import Navebar from './components/Navbar'
-
-
-const inter = Inter({ subsets: ['latin'] })
+import Navbar from './components/Navbar'
 
 export const metadata = {
   title: '4-H Record Books',
@@ -16,8 +9,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navebar />
+      <body>
+        <Navbar />
         {children}
       </body>
     </html>

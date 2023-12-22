@@ -6,27 +6,29 @@ export default function Navbar(){
     <nav>
 
       <div className='navTitle'>
-        <h1>4-H Record Books</h1>
+        <Link href='/'>
+          <h1>4-H Record Books</h1>
+        </Link>
       </div>
 
 
       <div className='navGroup'>
-        <Link href="/" className='navItem'>
+        <Link href='/' className='navItem'>
           <MdOutlineHome className='navIcon'/>
           Home
         </Link>
 
-        <Link href="/resume" className='navItem'>
+        <Link href='/resume' className='navItem'>
           <MdOutlineDescription className='navIcon'/>
           4-H Resume
         </Link>
 
-        <Link href="/projects" className='navItem'>
+        <Link href='/projects' className='navItem'>
           <MdContentPaste className='navIcon'/>
           My Projects
         </Link>
 
-        <Link href="/account" className='navItem'>
+        <Link href='/account' className='navItem'>
           <MdOutlineAccountCircle className='navIcon'/>
           Account
         </Link>
