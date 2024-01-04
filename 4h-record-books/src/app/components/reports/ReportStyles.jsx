@@ -12,8 +12,8 @@ const styles = StyleSheet.create({
     paddingBottom: 95,
     backgroundColor: "white",
     fontSize: 12,
+    fontFamily: "Kievit",
     fontWeight: "normal",
-    fontFamily: "Kievit"
   },
   content: {
     width: "100%",

@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, Image, StyleSheet, View } from "@react-pdf/renderer";
+import '../../fonts/fonts';
 
 var logo = "/assets/photos/logo_osu4h.png";
 
@@ -25,6 +26,8 @@ const styles = StyleSheet.create({
   footerText: {
     flex: 1,
     textAlign: "left",
+    fontFamily: "Kievit",
+    fontWeight: "normal",
   },
 });
 
