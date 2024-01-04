@@ -26,7 +26,7 @@ const OrderedList = ({items, spaceAfter = false}) => {
     return (
       <View>
         {items.map((item, index) => (
-          <View style={[styles.row, styles.spaceAfter]}>
+          <View style={[styles.row, styles.spaceAfter]} key={index}>
             <Text style={styles.itemNumber}>{index + 1}.</Text>
             <View style={styles.item}>{item}</View>
           </View>
@@ -37,7 +37,7 @@ const OrderedList = ({items, spaceAfter = false}) => {
     return (
       <View>
         {items.map((item, index) => (
-          <View style={styles.row}>
+          <View style={styles.row} key={index}>
             <Text style={styles.itemNumber}>{index + 1}</Text>
             <View style={styles.item}>{item}</View>
           </View>
