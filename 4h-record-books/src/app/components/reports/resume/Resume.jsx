@@ -1,44 +1,20 @@
 import { useState, useEffect } from "react";
-import { Document, Font, PDFViewer, Page, View, Text } from "@react-pdf/renderer";
-import Section0 from "./Section0.jsx";
+import { Document, PDFViewer, Page, Text } from "@react-pdf/renderer";
 import Footer from "../Footer.jsx";
-// import Section1 from "./Section1.jsx";
-// import Section2 from "./Section2.jsx";
+import ReportStyles from "../ReportStyles.jsx";
+import Section0 from "./Section0.jsx";
+import Section1 from "./Section1.jsx";
 
-// OSU Fonts
-var Stratum2Light = "/assets/fonts/Stratum2-Light.otf";
-var Stratum2Medium = "/assets/fonts/Stratum2-Medium.otf";
-var Stratum2Regular = "/assets/fonts/Stratum2-Regular.otf";
-
-var Kievit = "/assets/fonts/KievitOffc.ttf";
-var KievitBold = "/assets/fonts/KievitOffc-Bold.ttf";
-var KievitBoldItalic = "/assets/fonts/KievitOffc-BoldIta.ttf";
-var KievitItalic = "/assets/fonts/KievitOffc-Ita.ttf";
-var KievitMedium = "/assets/fonts/KievitOffc-Medi.ttf";
-var KievitMediumItalic = "/assets/fonts/KievitOffc-MediIta.ttf";
-
-
-Font.register({ family: 'Stratum2', fonts: [
-  { src: Stratum2Light, fontWeight: 'light' },
-  { src: Stratum2Medium, fontWeight: 'medium' },
-  { src: Stratum2Regular, fontWeight: 'normal' }
-]});
-
-Font.register({ family: 'Kievit', fonts: [
-  { src: Kievit, fontWeight: 'normal' },
-  { src: KievitBold, fontWeight: 'bold' },
-  { src: KievitBoldItalic, fontWeight: 'bold', fontStyle: 'italic' },
-  { src: KievitItalic, fontWeight: 'normal', fontStyle: 'italic' },
-  { src: KievitMedium, fontWeight: 'medium' },
-  { src: KievitMediumItalic, fontWeight: 'medium', fontStyle: 'italic' },
-]});
 
 const PDFFile = () => {
   return (
     <Document>
+      <Page style={ReportStyles.body} wrap>
         <Section0 />
-      {/* <Section1 />
-      <Section2 /> */}
+        <Section1 />
+        {/* <Section1 /> */}
+        <Footer />
+      </Page>
     </Document>
   )
 };
