@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import classes from './styles.module.css';
-import { Document, Font } from "@react-pdf/renderer";
 
 
 const Resume = () => {

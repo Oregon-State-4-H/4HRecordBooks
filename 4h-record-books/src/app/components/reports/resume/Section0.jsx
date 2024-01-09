@@ -1,6 +1,5 @@
 import React from "react";
 import { Page, Text, View } from "@react-pdf/renderer";
-import Footer from "../Footer.jsx";
 import OrderedList from "../OrderedList.jsx";
 import ReportStyles from "../ReportStyles.jsx";
 
@@ -14,45 +13,47 @@ var bestResumelist = [
   <Text>Remember that quality is more important than quantity. Don't put things in your record just to fill up space.</Text>
 ]
 
-const Section0 = () => {  
+function Section0(props) {
+  const userData = props.userData[0];
+  var name = userData.name;
+  var dob = userData.dob;
+  var county = userData.county;
+  var dateJoined = userData.dateJoined;
+
   return (
-    <Page style={ReportStyles.body}>
-      <View style={ReportStyles.content}>
-        <Text style={ReportStyles.title}>My 4-H Resume</Text>
+    <Page size="LETTER" style={ReportStyles.body}>
+      <Text style={ReportStyles.title}>My 4-H Resume</Text>
 
-        <View style={ReportStyles.fillableForm}>
-          <View style={ReportStyles.fillableFormRow}>
-            <Text style={ReportStyles.fillableFormLabel}>Name:</Text>
-            <Text style={ReportStyles.fillableFormInput}> Demo User</Text>
+      <View style={ReportStyles.fillableForm}>
+        <View style={ReportStyles.fillableFormRow}>
+          <Text style={ReportStyles.fillableFormLabel}>Name:</Text>
+          <Text style={ReportStyles.fillableFormInput}>{name}</Text>
+        </View>
+
+        <View style={ReportStyles.fillableFormRow}>
+          <View style={ReportStyles.fillableFormMultiInputSection}>
+            <Text style={ReportStyles.fillableFormLabel}>Date of Birth:</Text>
+            <Text style={ReportStyles.fillableFormInput}>{dob}</Text>
           </View>
-
-
-          <View style={ReportStyles.fillableFormRow}>
-            <View style={ReportStyles.fillableFormMultiInputSection}>
-              <Text style={ReportStyles.fillableFormLabel}>Date of Birth:</Text>
-              <Text style={ReportStyles.fillableFormInput}> 1/1/2006</Text>
-            </View>
-            <View style={ReportStyles.fillableFormMultiInputSection}>
-              <Text style={ReportStyles.fillableFormLabel}>County:</Text>
-              <Text style={ReportStyles.fillableFormInput}> Yamhill</Text>
-            </View>
-          </View>
-
-          <View style={ReportStyles.fillableFormRow}>
-            <Text style={ReportStyles.fillableFormLabel}>Date I joined 4-H:</Text>
-            <Text style={ReportStyles.fillableFormInput}> 1/15/2018</Text>
+          <View style={ReportStyles.fillableFormMultiInputSection}>
+            <Text style={ReportStyles.fillableFormLabel}>County:</Text>
+            <Text style={ReportStyles.fillableFormInput}>{county}</Text>
           </View>
         </View>
 
-        <Text>This record will be your summary of 4-H work done in all projects for every year you are in 4-H. Start with your first year and keep it up to date. It will be useful to you to know how much you have accomplished, particularly when you are filling out other forms for 4-H, school, 
-          <Text style={ReportStyles.bold}> scholarships</Text>, and other youth programs. It will be fun, too, to look back several years from now to see what you did.
-        </Text>
-        <Text style={ReportStyles.h2}>How to make your resume the best it can be: </Text>
-        <View style={{marginLeft: indent}}>
-          <OrderedList items={bestResumelist} spaceAfter={true}/>
+        <View style={ReportStyles.fillableFormRow}>
+          <Text style={ReportStyles.fillableFormLabel}>Date I joined 4-H:</Text>
+          <Text style={ReportStyles.fillableFormInput}>{dateJoined}</Text>
         </View>
       </View>
-      <Footer />
+
+      <Text>This record will be your summary of 4-H work done in all projects for every year you are in 4-H. Start with your first year and keep it up to date. It will be useful to you to know how much you have accomplished, particularly when you are filling out other forms for 4-H, school, 
+        <Text style={ReportStyles.bold}> scholarships</Text>, and other youth programs. It will be fun, too, to look back several years from now to see what you did.
+      </Text>
+      <Text style={ReportStyles.h2}>How to make your resume the best it can be: </Text>
+      <View style={{marginLeft: indent}}>
+        <OrderedList items={bestResumelist} spaceAfter={true}/>
+      </View>
     </Page>
   )
 };
