@@ -74,6 +74,22 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     marginBottom: 10,
   },
+  tableColAlignCenter: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    borderColor: "black",
+    padding: 3,
+  },
+  tableColAlignLeft: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    borderColor: "black",
+    padding: 3,
+  }
 });
 
 export default styles;
