@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
 
 
-const ResumePDF = dynamic(() => import("../../components/reports/resume/Resume"), {
+const ResumeViewer = dynamic(() => import("../../components/reports/resume/ResumeViewer"), {
   ssr: false,
 });
 
@@ -18,7 +18,7 @@ const Resume = () => {
 
   return (
     <main>
-      <ResumePDF />
+      <ResumeViewer />
     </main>
   )
 }

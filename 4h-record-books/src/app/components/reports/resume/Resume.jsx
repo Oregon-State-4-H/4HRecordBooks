@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { Document, PDFViewer } from "@react-pdf/renderer";
+import { Document } from "@react-pdf/renderer";
 import Section0 from "./Section0.jsx";
 import Section1 from "./Section1.jsx";
 
@@ -646,20 +645,4 @@ const PDFFile = () => {
   )
 };
 
-
-const PDFView = () => {
-  const [client, setClient] = useState(false)
-
-  useEffect(() => {
-    setClient(true)
-  }, [])
-
-  return (
-    <PDFViewer style={{width: '100%', height: '100vh', paddingTop:'0px'}}>
-      <PDFFile />
-    </PDFViewer>
-  )
-}
-
-
-export default PDFView;
+export default PDFFile;
