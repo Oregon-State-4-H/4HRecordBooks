@@ -3,13 +3,9 @@ import { Text, View, StyleSheet, Page } from "@react-pdf/renderer";
 import ReportStyles from "../ReportStyles.jsx";
 import Footer from "../Footer.jsx";
 
-let col1Flex = 1.25;
-let col2Flex = 1;
-let col3Flex = 3;
-let col4Flex = 1.75;
-let col5Flex = 3;
-let col6Flex = 1;
-let col7Flex = 1.5;
+let col1Flex = 1;
+let col2Flex = 4;
+let col3Flex = 5;
 
 const styles = StyleSheet.create({
   headerRow: {
@@ -49,22 +45,6 @@ const styles = StyleSheet.create({
   },
   col3: {
     flex: col3Flex,
-    borderRight: 1,
-  },
-  col4: {
-    flex: col4Flex,
-    borderRight: 1,
-  },
-  col5: {
-    flex: col5Flex,
-    borderRight: 1,
-  },
-  col6: {
-    flex: col6Flex,
-    borderRight: 1,
-  },
-  col7: {
-    flex: col7Flex,
   },
 });
 
@@ -79,19 +59,10 @@ function TableHeader(props) {
           <Text>Year</Text>
         </View>
         <View style={[styles.col2, ReportStyles.tableColAlignCenter]}>
-          <Text>Grade</Text>
+          <Text>Name of Project/Unit</Text>
         </View>
         <View style={[styles.col3, ReportStyles.tableColAlignCenter]}>
-          <Text>Club/Group Name</Text>
-        </View>
-        <View style={[styles.col4, ReportStyles.tableColAlignCenter]}>
-          <Text>Number in Club/Group</Text>
-        </View>
-        <View style={[styles.col5, ReportStyles.tableColAlignCenter]}>
-          <Text>Club/Group Leader or Advisor</Text>
-        </View>
-        <View style={[styles.col7, ReportStyles.tableColAlignCenter]}>
-          <Text>Meetings Attended</Text>
+          <Text>Project Size or Scope</Text>
         </View>
       </View>
     )
@@ -102,19 +73,10 @@ function TableHeader(props) {
           <Text>Year</Text>
         </View>
         <View style={[styles.col2, ReportStyles.tableColAlignCenter]}>
-          <Text>Grade</Text>
+          <Text>Name of Project/Unit</Text>
         </View>
         <View style={[styles.col3, ReportStyles.tableColAlignCenter]}>
-          <Text>Club/Group Name</Text>
-        </View>
-        <View style={[styles.col4, ReportStyles.tableColAlignCenter]}>
-          <Text>Number in Club/Group</Text>
-        </View>
-        <View style={[styles.col5, ReportStyles.tableColAlignCenter]}>
-          <Text>Club/Group Leader or Advisor</Text>
-        </View>
-        <View style={[styles.col7, ReportStyles.tableColAlignCenter]}>
-          <Text>Meetings Attended</Text>
+          <Text>Project Size or Scope</Text>
         </View>
       </View>
     )
@@ -128,14 +90,14 @@ function addPageBreaks() {
   var count = 1
 
   while (i < rows.length) {
-    rows.splice(i, 0, <TableHeader key={"Sec1Head-" + count} isBreak={true} />);
+    rows.splice(i, 0, <TableHeader key={"Sec2Head-" + count} isBreak={true} />);
     i += 25;
     count++;
   }
 }
 
 
-function Section1(props) {
+function Section2(props) {
   const tableData = props.tableData;
   rows = tableData.map((row, index) => {
     return (
@@ -143,20 +105,11 @@ function Section1(props) {
         <View style={[styles.col1, ReportStyles.tableColAlignCenter]}>
           <Text>{row.year}</Text>
         </View>
-        <View style={[styles.col2, ReportStyles.tableColAlignCenter]}>
-          <Text>{row.grade}</Text>
+        <View style={[styles.col2, ReportStyles.tableColAlignLeft]}>
+          <Text>{row.name}</Text>
         </View>
         <View style={[styles.col3, ReportStyles.tableColAlignLeft]}>
-          <Text>{row.clubName}</Text>
-        </View>
-        <View style={[styles.col4, ReportStyles.tableColAlignCenter]}>
-          <Text>{row.clubSize}</Text>
-        </View>
-        <View style={[styles.col5, ReportStyles.tableColAlignLeft]}>
-          <Text>{row.clubLeader}</Text>
-        </View>
-        <View style={[styles.col7, ReportStyles.tableColAlignCenter]}>
-          <Text>{row.meetingsAttended} / {row.meetingsHeld}</Text>
+          <Text>{row.scope}</Text>
         </View>
       </View>
     )
@@ -167,10 +120,10 @@ function Section1(props) {
 
   return (
     <Page size="LETTER" style={ReportStyles.body} wrap>
-        <Text style={ReportStyles.h1}>Section 1: 4-H Involvement Summary</Text>
-        <Text style={ReportStyles.tableHeaading}>List of all of the clubs/groups I have participated in.</Text>
+        <Text style={ReportStyles.h1}>Section 2: 4-H Project/Program Summary</Text>
+        <Text style={ReportStyles.tableHeaading}>List of all of the projects or programs I have worked on.</Text>
   
-        <TableHeader headerKey={"Sec1Head-0"} isBreak={false} />
+        <TableHeader headerKey={"Sec2Head-0"} isBreak={false} />
 
         {rows}
 
@@ -179,4 +132,4 @@ function Section1(props) {
   )
 };
 
-export default Section1;
+export default Section2;
