@@ -91,7 +91,8 @@ h1 {
 .e-card {
   border: 1px solid white;
   border-radius: 5px;
-  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin: 0px 20px 20px;
   width: 30%;
   text-align: center;
@@ -101,6 +102,19 @@ h1 {
   }
 }
 
+.e-card-content {
+  padding-top: 10px;
+}
+
 .e-card-content:hover {
   text-decoration: underline;
+}
+
+.e-card-img img {
+  max-width: 90%;
+  width: auto;
+  max-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
