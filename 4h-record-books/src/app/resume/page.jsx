@@ -15,7 +15,7 @@ const Resume = () => {
 
   return (
     <main>
-      <h1>Resume</h1>
+      <h1><b>Resume</b></h1>
       <Link href={'/resume/preview'} style={{textDecoration:"underline"}}>Preview Resume</Link>
       <br />
 
