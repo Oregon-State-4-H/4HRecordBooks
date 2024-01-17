@@ -72,3 +72,35 @@ nav {
 .navIcon {
   @apply text-2xl;
 }
+
+h1 {
+  font-size: 20px;
+  margin: 20px
+}
+
+/* main {
+  margin: 20px;
+} */
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.e-card {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0px 20px 20px;
+  width: 30%;
+  text-align: center;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.e-card-content:hover {
+  text-decoration: underline;
+}
