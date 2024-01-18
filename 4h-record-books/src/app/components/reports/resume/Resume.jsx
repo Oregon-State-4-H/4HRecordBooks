@@ -1,6 +1,7 @@
 import { Document } from "@react-pdf/renderer";
 import Section0 from "./Section0.jsx";
 import Section1 from "./Section1.jsx";
+import Section2 from "./Section2.jsx";
 
 var section0Data = [
   {
@@ -634,13 +635,267 @@ var section1Data = [
   },
 ]
 
-var section2Data = []
+var section2Data = [
+  {
+    year: "2019-20",
+    name: "Horses",
+    scope: "1 Horse",
+  },
+  {
+    year: "",
+    name: "Lambs",
+    scope: "2 Lambs",
+  },
+  {
+    year: "2020-21",
+    name: "Horses",
+    scope: "2 Horses",
+  },
+  {
+    year: "",
+    name: "Lambs",
+    scope: "3 Lambs",
+  },
+  {
+    year: "2021-22",
+    name: "Lambs",
+    scope: "2 Lambs",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  {
+    year: "",
+    name: "Tech Wizards",
+    scope: "Designed a webpage; 2 Remote Operated Vehicles",
+  },
+  
+]
 
 const PDFFile = () => {
   return (
     <Document>
         <Section0 userData={section0Data}/> 
         <Section1 tableData={section1Data}/> 
+        <Section2 tableData={section2Data}/>
     </Document>
   )
 };
