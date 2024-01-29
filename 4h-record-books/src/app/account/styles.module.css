@@ -5,7 +5,7 @@
     flex-wrap: wrap;
 }
   
-.acc_card {
+/* .card {
     border: 1px solid white;
     border-radius: 5px;
     padding-top: 15px;
@@ -18,9 +18,9 @@
     @media (max-width: 480px) {
       width: 100%;
     }
-}
+} */
 
-.acc_card_title {
-    color: orange;
+#btn {
+    color: black;
 }
   
