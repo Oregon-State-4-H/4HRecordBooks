@@ -8,6 +8,12 @@ import Section5 from "./Section5.jsx";
 import Section6 from "./Section6.jsx";
 import Section7 from "./Section7.jsx";
 import Section8 from "./Section8.jsx";
+import Section9 from "./Section9.jsx";
+import Section10 from "./Section10.jsx";
+import Section11 from "./Section11.jsx";
+import Section12 from "./Section12.jsx";
+import Section13 from "./Section13.jsx";
+import Section14 from "./Section14.jsx";
 
 var section0Data = [
   {
@@ -267,17 +273,231 @@ var section8Data = [
   },
 ]
 
-var section9Data = []
+var section9Data = [
+  {
+    year: "2019-20",
+    type: "Demonstration",
+    topic: "How to Straighten Material",
+    timesGiven: "2",
+    location: "Club & County",
+    size: "73",
+  },
+  {
+    year: "",
+    type: "Newspaper Article",
+    topic: "International Exchange",
+    timesGiven: "1",
+    location: "Oregonian",
+    size: "185,000",
+  },
+  {
+    year: "2020-21",
+    type: "Illustrated Talk",
+    topic: "Bathing a Sheep",
+    timesGiven: "3",
+    location: "Club, County, and State Fair",
+    size: "15",
+  },
+  {
+    year: "",
+    type: "Educational Display",
+    topic: "Breeds of Sheep",
+    timesGiven: "2",
+    location: "County and State Fair",
+    size: "2000",
+  },
+  {
+    year: "",
+    type: "Speech to Rotary Club",
+    topic: "What 4-H Has Taught Me",
+    timesGiven: "1",
+    location: "County",
+    size: "25",
+  },
+  {
+    year: "",
+    type: "Interview Judging",
+    topic: "Photo, Art, and Science",
+    timesGiven: "3",
+    location: "County",
+    size: "6",
+  },
+  {
+    year: "",
+    type: "Oral Reasons",
+    topic: "Livestock Judging Contest",
+    timesGiven: "3",
+    location: "County",
+    size: "1",
+  },
+  {
+    year: "",
+    type: "Video",
+    topic: "How to Shear a Sheep",
+    timesGiven: "N/A",
+    location: "YouTube",
+    size: "86 Views",
+  },
+]
 
-var section10Data = []
+var section10Data = [
+  {
+    year: "2019-20",
+    type: "Oral Book Report",
+    topic: "Oregon Trail",
+    timesGiven: "1",
+    location: "School",
+    size: "35",
+  },
+  {
+    year: "",
+    type: "Scripture Reading",
+    topic: "Different Each week",
+    timesGiven: "10",
+    location: "Church",
+    size: "150",
+  },
+  {
+    year: "2020-21",
+    type: "Science Fair Display",
+    topic: "Recycling Study",
+    timesGiven: "1",
+    location: "School",
+    size: "30",
+  },
+  {
+    year: "",
+    type: "TV Story",
+    topic: "Interviewed regarding soccer team",
+    timesGiven: "1",
+    location: "KGW TV",
+    size: "5000",
+  },
+  {
+    year: "",
+    type: "Website",
+    topic: "FFA chapter information",
+    timesGiven: "N/A",
+    location: "www.----",
+    size: "50 Members",
+  },
+]
 
-var section11Data = []
+var section11Data = [
+  {
+    year: "2019-20",
+    event: "County Fair",
+    description: "Horse: showmanship, western equitation, trail, ground training, jumping, dressage",
+    award: "3 blues, 2 reds, 1 white",
+  },
+  {
+    year: "",
+    event: "State Fair",
+    description: "Sheep: showmanship, market lamb",
+    award: "2 blues, 1 red",
+  },
+  {
+    year: "",
+    event: "County Fair",
+    description: "Clothing: 1 dress phase 2; 2 articles for home",
+    award: "1 blue, 2 reds",
+  },
+  {
+    year: "2020-21",
+    event: "County Judging Contest",
+    description: "Livestock",
+    award: "1 blue",
+  },
+  {
+    year: "",
+    event: "County Presentation Contest",
+    description: "Illustrated Talk",
+    award: "1 blue",
+  },
+  {
+    year: "",
+    event: "Spring Horse Classic - State",
+    description: "Illustrated Talk",
+    award: "3rd place individual presentation",
+  },
+]
 
-var section12Data = []
+var section12Data = [
+  {
+    year: "2019-20",
+    event: "Chess Tournament",
+    recognition: "3rd Place",
+    region: "Local",
+  },
+  {
+    year: "2020-21",
+    event: "FFA Livestock Judging",
+    recognition: "2nd Place Team",
+    region: "State",
+  },
+  {
+    year: "",
+    event: "Mid-Valley Paint Show",
+    recognition: "4th place English Equitation",
+    region: "Regional",
+  },
+  {
+    year: "",
+    event: "State Debate finals",
+    recognition: "Participant; did not place",
+    region: "State",
+  }
+]
 
-var section13Data = []
+var section13Data = [
+  {
+    year: "2019-20",
+    description: "Livestock Advancement Certificate - Step 1",
+  },
+  {
+    year: "",
+    description: "Top Intermediate Record Book",
+  },
+  {
+    year: "",
+    description: "County Fair Intermediate Sheep Showmanship - Champion",
+  },
+  {
+    year: "2020-21",
+    description: "County Medal - Sheep",
+  },
+  {
+    year: "",
+    description: "National 4-H Conference Delegate",
+  },
+  {
+    year: "",
+    description: "Selected for State 4-H Ambassador Team",
+  },
+]
 
-var section14Data = []
+var section14Data = [
+  {
+    year: "2019-20",
+    description: "Spelling Champion for Grade 9",
+  },
+  {
+    year: "",
+    description: "Student of the Month for March",
+  },
+  {
+    year: "",
+    description: "First Aid Certificate",
+  },
+  {
+    year: "2020-21",
+    description: "Eagle Scout Rank",
+  },
+  {
+    year: "",
+    description: "Hunter Safety Certificate",
+  },
+]
 
 const PDFFile = () => {
   return (
@@ -291,6 +511,12 @@ const PDFFile = () => {
         <Section6 tableData={section6Data}/>
         <Section7 tableData={section7Data}/>
         <Section8 tableData={section8Data}/>
+        <Section9 tableData={section9Data}/>
+        <Section10 tableData={section10Data}/>
+        <Section11 tableData={section11Data}/>  
+        <Section12 tableData={section12Data}/>
+        <Section13 tableData={section13Data}/>
+        <Section14 tableData={section14Data}/>
     </Document>
   )
 };
