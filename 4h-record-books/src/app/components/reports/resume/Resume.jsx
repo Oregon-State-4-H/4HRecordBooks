@@ -6,6 +6,8 @@ import Section3 from "./Section3.jsx";
 import Section4 from "./Section4.jsx";
 import Section5 from "./Section5.jsx";
 import Section6 from "./Section6.jsx";
+import Section7 from "./Section7.jsx";
+import Section8 from "./Section8.jsx";
 
 var section0Data = [
   {
@@ -205,9 +207,65 @@ var section6Data = [
   },
 ]
 
-var section7Data = []
+var section7Data = [
+  {
+    year: "2019-20",
+    description: "Visited nursing home; introduced my 4-H dog to 4 elderly patients",
+    hours: "4",
+    people: "15",
+  },
+  {
+    year: "",
+    description: "Club assembled Thanksgiving food basket for family of 6",
+    hours: "1",
+    people: "6",
+  },
+  {
+    year: "",
+    description: "County fairgrounds clean-up; weeded flower beds by entrance",
+    hours: "3",
+    people: "100",
+  },
+  {
+    year: "2020-21",
+    description: "Fairgrounds work day; painted beef barns",
+    hours: "4",
+    people: "500",
+  },
+  {
+    year: "",
+    description: "Wrote 10 letters to military with the County Ambassador team",
+    hours: "2",
+    people: "20",
+  },
+]
 
-var section8Data = []
+var section8Data = [
+  {
+    year: "2019-20",
+    description: "Did yard work for elderly neighbors",
+    hours: "5",
+    people: "2",
+  },
+  {
+    year: "",
+    description: "Made campaign posters for school board candidate",
+    hours: "4",
+    people: "10",
+  },
+  {
+    year: "2020-21",
+    description: "Oregon beach clean-up with church youth group",
+    hours: "5",
+    people: "1000",
+  },
+  {
+    year: "",
+    description: "Donated food for school drive",
+    hours: "1",
+    people: "100",
+  },
+]
 
 var section9Data = []
 
@@ -231,6 +289,8 @@ const PDFFile = () => {
         <Section4 tableData={section4Data}/>
         <Section5 tableData={section5Data}/>
         <Section6 tableData={section6Data}/>
+        <Section7 tableData={section7Data}/>
+        <Section8 tableData={section8Data}/>
     </Document>
   )
 };
