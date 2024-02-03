@@ -13,7 +13,12 @@ function Card(props) {
 export default function Account() {
   return (
     <main>
-      <h1><b>My Account</b></h1>
+      <h1><b>Demo User</b></h1>
+      <p>demouser@gmail.com</p>
+
+      <br></br>
+
+      <h2><b>Account</b></h2>
       <div className={classes.accountCard}>
         <Card title="Notification Settings"/>
         <Card title="Edit Profile"/>
@@ -21,7 +26,7 @@ export default function Account() {
 
       <br></br>
       
-      <h1><b>General</b></h1>
+      <h2><b>General</b></h2>
       <div className={classes.accountCard}>
         <Card title="Support"/>
         <Card title="Terms of Service"/>
