@@ -1,26 +1,30 @@
-.card-grid {
-    padding-top: 20px;
+.accountCard {
+    border-radius: 5px;
+    width: 30vw;
+    padding: 10px;
+    /* border: 1px solid white; */
+}
+
+.accountCardItems {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    padding: 10px;
+    color: var(--text-primary);
 }
-  
-/* .card {
-    border: 1px solid white;
-    border-radius: 5px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-right: 40px;
-    margin-bottom: 40px;
-    width: 30%;
-    text-align: center;
-  
-    @media (max-width: 480px) {
-      width: 100%;
-    }
-} */
 
 #btn {
-    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.accountCardItems:hover {
+  background: lightgrey;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .accountCard {
+        width: 100%;
+    }
 }
   
