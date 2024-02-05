@@ -1,12 +1,14 @@
 import classes from './styles.module.css';
+import Link from 'next/link';
 
 function Card(props) {
   var title = props.title;
+  var url = props.url;
 
   return (
-    <div className={classes.accountCardItems}>
+    <Link href={url} className={classes.accountCardItems}>
       <button type="submit" id={classes.btn}>{title}</button>
-    </div>
+    </Link>
   )
 }
 
@@ -20,18 +22,18 @@ export default function Account() {
 
       <h2><b>Account</b></h2>
       <div className={classes.accountCard}>
-        <Card title="Notification Settings"/>
-        <Card title="Edit Profile"/>
+        {/* <Card title="Notification Settings"/> */}
+        <Card title="Edit Profile" url="/account/profile" />
       </div>
 
       <br></br>
       
       <h2><b>General</b></h2>
-      <div className={classes.accountCard}>
+      {/* <div className={classes.accountCard}>
         <Card title="Support"/>
         <Card title="Terms of Service"/>
         <Card title="Invite Friends"/>
-      </div>
+      </div> */}
     </main>
   );
 }
