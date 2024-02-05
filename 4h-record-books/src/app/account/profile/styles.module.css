@@ -1,12 +1,17 @@
-.label {
-    display: flex;
-    flex-direction: row;
+.profileForm {
     padding: 10px 0px;
 }
 
+.label {
+    display: grid;
+    grid-template-columns: 8ch auto;
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+    align-items: center;
+}
+
 .textInputBox {
-    padding: 0px 10px;
-    margin-left: 10px;
+    padding: 10px 0px;
     border: none;
     width: 30vw;
     border-bottom: 1px solid white;
