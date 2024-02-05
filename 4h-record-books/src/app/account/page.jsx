@@ -22,7 +22,6 @@ export default function Account() {
 
       <h2><b>Account</b></h2>
       <div className={classes.accountCard}>
-        <Card title="Notification Settings" url="/account/setting" />
         <Card title="Edit Profile" url="/account/profile" />
       </div>
 
