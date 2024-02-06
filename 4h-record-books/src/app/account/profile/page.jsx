@@ -49,14 +49,6 @@ function NumberCard(props) {
 export default function Profile() {
     const [email, setEmail] = useState("demouser@gmail.com");
 
-    const [items, setItems] = useState([]);
-
-    function handleSubmit(event) {
-        event.preventDefault();
-        if (name !== "" || setName !== "") {
-        }
-    }
-
     return (
         <main>
             <h1><b>Edit Profile</b></h1>

@@ -7,7 +7,7 @@ function Card(props) {
 
   return (
     <Link href={url} className={classes.accountCardItems}>
-      <button type="submit" id={classes.btn}>{title}</button>
+      <button type="button" className={classes.btn}>{title}</button>
     </Link>
   )
 }

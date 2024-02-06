@@ -1,6 +1,6 @@
 .profileForm {
     padding: 10px 0px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 .label {
@@ -23,5 +23,8 @@
 @media screen and (max-width: 480px) {
     .textInputBox {
         width: 100%;
+    }
+    .profileForm {
+        margin-bottom: 100px;
     }
 }
