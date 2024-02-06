@@ -64,7 +64,7 @@ function TableHeader(props) {
           <Text>Year</Text>
         </View>
         <View style={[styles.col2, ReportStyles.tableColAlignCenter]}>
-          <Text>What I did</Text>
+          <Text>What I Did</Text>
         </View>
         <View style={[styles.col3, ReportStyles.tableColAlignCenter]}>
           <Text>Hours Served</Text>
@@ -81,7 +81,7 @@ function TableHeader(props) {
           <Text>Year</Text>
         </View>
         <View style={[styles.col2, ReportStyles.tableColAlignCenter]}>
-          <Text>What I did</Text>
+          <Text>What I Did</Text>
         </View>
         <View style={[styles.col3, ReportStyles.tableColAlignCenter]}>
           <Text>Hours Served</Text>
