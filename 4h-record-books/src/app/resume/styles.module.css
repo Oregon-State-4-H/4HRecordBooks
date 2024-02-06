@@ -1,0 +1,22 @@
+.sectionBtn {
+    /* border: 1px solid lightgrey; */
+    padding: 10px;
+    width: 40vw;
+}
+
+.sectionBtn:hover {
+    border-radius: 5px;
+    background: lightgrey;
+}
+
+@media screen and (max-width: 480px) {
+    .sectionBtn {
+        width: 100%;
+    }
+    .btnTitle {
+        text-align: left;
+    }
+    .btnList {
+        margin-bottom: 100px;
+    }
+}
