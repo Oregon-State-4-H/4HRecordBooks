@@ -24,15 +24,18 @@ export default function Account() {
       <div className={classes.accountCard}>
         <Card title="Edit Profile" url="/account/profile" />
       </div>
-
-      <br></br>
       
+      <br></br>
+
       <h2><b>General</b></h2>
-      {/* <div className={classes.accountCard}>
-        <Card title="Support"/>
+      <div className={classes.accountCard}>
+        <div>Support</div>
+        <div>Terms of Services</div>
+        <div>Invite Friends</div>
+        {/* <Card title="Support"/>
         <Card title="Terms of Service"/>
-        <Card title="Invite Friends"/>
-      </div> */}
+        <Card title="Invite Friends"/> */}
+      </div>
     </main>
   );
 }

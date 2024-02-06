@@ -1,17 +1,19 @@
 .profileForm {
     padding: 10px 0px;
+    margin-bottom: 100px;
 }
 
 .label {
     display: grid;
-    grid-template-columns: 8ch auto;
+    grid-template-columns: 10ch auto;
     grid-gap: 1rem;
     grid-auto-flow: row;
     align-items: center;
+    padding: 10px 0px;
 }
 
 .textInputBox {
-    padding: 10px 0px;
+    padding: 10px 0px 10px 5px;
     border: none;
     width: 30vw;
     border-bottom: 1px solid lightgrey;
