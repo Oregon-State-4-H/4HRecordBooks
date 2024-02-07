@@ -16,34 +16,32 @@ function Buttons(props) {
   var section = props.section;
   
   return (
-    <div className={classes.sectionBtn}>
-      <button type="button" className={classes.btnTitle}>{section}</button>
+    <div className={styles.sectionBtn}>
+      <button type="button" className={styles.btnTitle}>{section}</button>
     </div>
   )
 }
 
-function Card(props) {
+function StringCard(props) {
   var text = props.text;
-  var input = props.input;
-  const [value, setValue] = useState(input);
+  var name = props.name;
 
   return (
-      <label className={classes.label}>
+      <label className={styles.label}>
           {text}
-          <input className={classes.textInputBox} type="text" value={value} onChange={event => {setValue(event.target.value)}} placeholder={input} />
+          <input className={styles.textInputBox} type="text" placeholder={name} />
       </label>
   )
 }
 
 function NumberCard(props) {
   var text = props.text;
-  var numInput = props.numInput;
-  const [num, setNum] = useState(numInput);
+  var number = props.number;
 
   return (
-      <label className={classes.label}>
+      <label className={styles.label}>
           {text}
-          <input className={classes.textInputBox} type="number" value={num} onChange={event => {setNum(event.target.value)}} placeholder={numInput} />
+          <input className={styles.textInputBox} type="number" placeholder={number} />
       </label>
   )
 }
@@ -51,10 +49,17 @@ function NumberCard(props) {
 function section1() {
   return (
     <FormCard>
-      <label className={styles.label}>
-        Year
-        <input className={styles.textInputBox} type="text" placeholder="Year" />
-      </label>
+      <NumberCard text="Year" number="2012-13" />
+      <NumberCard text="Grade" number="9" />
+      
+      <StringCard text="Name of Club/Group" name="Oak Grove Clothing Club" />
+      
+      <NumberCard text="Number in Club/Group" number="9" />
+      
+      <StringCard text="Club/Group Leader or Advisor" name="Mrs. L. Jones" />
+      
+      <NumberCard text="Meetings Held" number="15" />
+      <NumberCard text="Meetings Attended" number="12" />
     </FormCard>
   )
 }
@@ -62,10 +67,9 @@ function section1() {
 function section2() {
   return (
     <FormCard>
-      <label className={styles.label}>
-        Year
-        <input className={styles.textInputBox} type="text" placeholder="Year" />
-      </label>
+      <NumberCard text="Year" number="2012-13" />
+      
+      <StringCard text="Name of Project/Unit" name="Clothing" />
     </FormCard>
   )
 }
@@ -201,11 +205,6 @@ function section14() {
     </FormCard>
   )
 }
-
-
-
-
-
 
 
 export default function Section({

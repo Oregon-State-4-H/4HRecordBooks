@@ -2,3 +2,48 @@
     display: flex;
     flex-direction: column;
 }
+
+.submitBtn {
+    border: 1px solid lightgrey;
+    background: lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+    width: 30vw;
+}
+
+.submitBtn:hover {
+    border: 1px solid var(--beaver-orange);
+    background: var(--beaver-orange);
+}
+
+.label {
+    display: grid;
+    grid-template-columns: 15ch auto;
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.textInputBox {
+    padding: 5px;
+    border: none;
+    width: 35vw;
+    border-bottom: 1px solid lightgrey;
+    background: none;
+}
+
+@media screen and (max-width: 480px) {
+    .submitBtn {
+        width: 100%;
+    }
+
+    .label {
+        grid-template-columns: 10ch auto;
+    }
+
+    .textInputBox {
+        width: 100%;
+    }
+}
