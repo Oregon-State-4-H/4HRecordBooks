@@ -19,6 +19,7 @@ export default function Home() {
     <main>
       <ActionBar title="Home" disableBack={true} />
       <div className={styles.summaryCard}>
+        <div className={styles.cardTitle}>4-H Resources</div>
         <Card title="4-H Youth Development" url="https://extension.oregonstate.edu/4h" />
         <Card title="Events" url="https://extension.oregonstate.edu/program/all/4h/events" />
         <Card title="Local 4-H Program Finder" url="https://extension.oregonstate.edu/program/all/4h/local-programs" />

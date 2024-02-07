@@ -21,6 +21,14 @@
     font-weight: regular;
 }
 
+.cardTitle {
+    padding: 10px;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--beaver-orange);
+}
+
 @media screen and (max-width: 480px) {
     .summaryCard {
         width: 100%;
