@@ -1,0 +1,28 @@
+.summaryCard {
+    background: var(--bk-secondary);
+    border-radius: 5px;
+    width: 30vw;
+    padding: 10px;
+}
+
+.summaryCardItem {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: var(--text-primary);
+}
+
+.summaryCardItem:hover { 
+    background: lightgrey;
+    border-radius: 5px;
+}
+
+.cardText {
+    font-weight: regular;
+}
+
+@media screen and (max-width: 480px) {
+    .summary-card {
+        width: 100%;
+    }
+}

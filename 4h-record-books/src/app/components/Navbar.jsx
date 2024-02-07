@@ -5,11 +5,9 @@ export default function Navbar(){
   return (
     <nav>
 
-      <div className='navTitle'>
-        <Link href='/'>
-          <h1>4-H Record Books</h1>
-        </Link>
-      </div>
+      <Link href='/' className='navTitle'>
+        <h1>4-H Record Books</h1>
+      </Link>
 
 
       <div className='navGroup'>

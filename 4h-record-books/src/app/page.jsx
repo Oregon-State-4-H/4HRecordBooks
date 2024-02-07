@@ -1,12 +1,14 @@
 import Link from 'next/link'
+import styles from "./styles.module.css"
+
 
 function Card(props) {
   var title = props.title;
   var url = props.url;
 
   return (
-    <Link href={url} className="summary-card-item" rel="noopener noreferrer" target="_blank">
-      <div className="card-text">{title}</div>
+    <Link href={url} className={styles.summaryCardItem} rel="noopener noreferrer" target="_blank">
+      <div className={styles.cardText}>{title}</div>
     </Link>
   )
 }
@@ -15,7 +17,7 @@ export default function Home() {
   return (
     <main>
       <h1><b>Home</b></h1>
-      <div className="summary-card">
+      <div className={styles.summaryCard}>
         <Card title="4-H Youth Development" url="https://extension.oregonstate.edu/4h" />
         <Card title="Events" url="https://extension.oregonstate.edu/program/all/4h/events" />
         <Card title="Local 4-H Program Finder" url="https://extension.oregonstate.edu/program/all/4h/local-programs" />
