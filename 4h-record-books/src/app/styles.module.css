@@ -1,0 +1,36 @@
+.summaryCard {
+    background: var(--bk-secondary);
+    border-radius: 5px;
+    width: 30vw;
+    padding: 10px;
+}
+
+.summaryCardItem {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: var(--text-primary);
+}
+
+.summaryCardItem:hover { 
+    background: lightgrey;
+    border-radius: 5px;
+}
+
+.cardText {
+    font-weight: regular;
+}
+
+.cardTitle {
+    padding: 10px;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--beaver-orange);
+}
+
+@media screen and (max-width: 480px) {
+    .summaryCard {
+        width: 100%;
+    }
+}

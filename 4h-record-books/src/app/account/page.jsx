@@ -1,3 +1,4 @@
+import ActionBar from '../components/ActionBar';
 import classes from './styles.module.css';
 import Link from 'next/link';
 
@@ -15,6 +16,7 @@ function Card(props) {
 export default function Account() {
   return (
     <main>
+      <ActionBar title="Account" disableBack={true} />
       <h1><b>Demo User</b></h1>
       <p>demouser@gmail.com</p>
 
