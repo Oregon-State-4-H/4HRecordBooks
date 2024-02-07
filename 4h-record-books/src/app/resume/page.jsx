@@ -33,6 +33,18 @@ const Resume = () => {
   return (
     <main>
       <ActionBar title="My 4-H Resume" disableBack={true} />
+      <h1><b>My 4-H Resume</b></h1>
+      
+      <div className={styles.documentContainer}>
+        <Link href={'/resume/preview'} style={{textDecoration:"underline"}}>Preview Resume</Link>
+        <br />
+
+        { isClient ? 
+          <PDFDownloadLink document={<PDFFile />} filename="FORM">
+            {({loading}) => (loading ? <button>Loading Document...</button> : <button>Download Resume</button> )}
+          </PDFDownloadLink>
+        : null}
+      </div>
 
       <div className={classes.sectionsContainer}>
         <div className={styles.sectionGroup}>
@@ -78,14 +90,6 @@ const Resume = () => {
         </div>
       </div>
 
-      <Link href={'/resume/preview'} style={{textDecoration:"underline"}}>Preview Resume</Link>
-      <br />
-
-      { isClient ? 
-        <PDFDownloadLink document={<PDFFile />} filename="FORM">
-          {({loading}) => (loading ? <button>Loading Document...</button> : <button>Download Resume</button> )}
-        </PDFDownloadLink>
-      : null}
     </main>
   )
 }
