@@ -22,7 +22,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .summary-card {
+    .summaryCard {
         width: 100%;
     }
 }

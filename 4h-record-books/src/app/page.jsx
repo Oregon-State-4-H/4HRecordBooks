@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styles from "./styles.module.css"
+import ActionBar from './components/ActionBar';
 
 
 function Card(props) {
@@ -16,7 +17,7 @@ function Card(props) {
 export default function Home() {
   return (
     <main>
-      <h1><b>Home</b></h1>
+      <ActionBar title="Home" disableBack={true} />
       <div className={styles.summaryCard}>
         <Card title="4-H Youth Development" url="https://extension.oregonstate.edu/4h" />
         <Card title="Events" url="https://extension.oregonstate.edu/program/all/4h/events" />
