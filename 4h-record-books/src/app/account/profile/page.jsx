@@ -63,18 +63,10 @@ export default function Profile() {
                     Email
                     <input className={classes.textInputBox} type="email" value={email} onChange={event => {setEmail(event.target.value)}} placeholder="demouser@gmail.com" />
                 </label>
-
-                <Card text="Club Name" input="Dummy Data" />
-                <Card text="Leader" input="John Doe" />
+                
                 <Card text="County" input="Benton" />
                 
                 <NumberCard text="Year In 4-H" numInput="2016" />
-
-                <Card text="Kind of Project" input="Animal" />
-
-                <NumberCard text="Year In This Project" numInput="2016" />
-                <NumberCard text="Date Project Started" numInput="2018" />
-                <NumberCard text="Date Project Closed" numInput="2020" />
 
             </form>
         </main>
