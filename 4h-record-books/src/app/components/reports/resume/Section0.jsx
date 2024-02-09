@@ -6,11 +6,11 @@ import ReportStyles from "../ReportStyles.jsx";
 var indent = 20;
 
 var bestResumelist = [
-  <Text>List each year only once on each page at the first entry for that year.</Text>,
-  <Text>Most items should only be entered once; however, some things may be listed in multiple places. For example, a speech you gave may be entered both in Section 11 if you gave it at your county contest AND in Section 9 as a Communication in 4-H. For major activities, you might emphasize different aspects of the activity in different sections. As an example, you might enter what you did and the hours you worked at a Community Service project in Section 7, but also enter it Section 5 under Leadership in 4-H if you were the person responsible for organizing the event.</Text>,
-  <Text>Be as specific and complete with your entries as possible. You want people who read your record to understand the extent of what you have done.</Text>,
-  <Text>Be careful in your use of abbreviations and/or acronyms. Someone reading your record might not be familiar with those you use, and some have multiple meanings.</Text>,
-  <Text>Remember that quality is more important than quantity. Don't put things in your record just to fill up space.</Text>
+  <Text key="li1">List each year only once on each page at the first entry for that year.</Text>,
+  <Text key="li2">Most items should only be entered once; however, some things may be listed in multiple places. For example, a speech you gave may be entered both in Section 11 if you gave it at your county contest AND in Section 9 as a Communication in 4-H. For major activities, you might emphasize different aspects of the activity in different sections. As an example, you might enter what you did and the hours you worked at a Community Service project in Section 7, but also enter it Section 5 under Leadership in 4-H if you were the person responsible for organizing the event.</Text>,
+  <Text key="li3">Be as specific and complete with your entries as possible. You want people who read your record to understand the extent of what you have done.</Text>,
+  <Text key="li4">Be careful in your use of abbreviations and/or acronyms. Someone reading your record might not be familiar with those you use, and some have multiple meanings.</Text>,
+  <Text key="li5">Remember that quality is more important than quantity. Don't put things in your record just to fill up space.</Text>
 ]
 
 function Section0(props) {

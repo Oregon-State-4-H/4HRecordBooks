@@ -35,7 +35,7 @@ const Footer = () => {
   return (
     <View style={styles.footer} fixed>
         <Text style={styles.footerText}>{footerText}</Text>
-        <Image style={styles.footerImage} src={logo}/>
+        <Image style={styles.footerImage} src={logo} alt="OSU Extension Service Logo"/>
     </View>
   )
 };
