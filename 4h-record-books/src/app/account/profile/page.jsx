@@ -1,6 +1,8 @@
 "use client";
 import classes from './styles.module.css';
 import { useState } from 'react';
+import ActionBar from '../../components/ActionBar';
+import Alert from 'react-bootstrap/Alert';
 
 function updateProfile() {
     const [info, setInfo] = useState({
@@ -51,7 +53,8 @@ export default function Profile() {
 
     return (
         <main>
-            <h1><b>Edit Profile</b></h1>
+            <ActionBar title="Edit Profile" />
+            {/* <h1><b>Edit Profile</b></h1> */}
             <form className={classes.profileForm}>
                 <Card text="Name" input="Demo User" />
                 <Card text="Gender" input="Female" />
@@ -67,6 +70,11 @@ export default function Profile() {
                 <Card text="County" input="Benton" />
                 
                 <NumberCard text="Year In 4-H" numInput="2016" />
+
+                <div className={classes.btns}>
+                    <button type="submit" className={classes.submitBtn}>Update Profile</button>
+                    <button type="submit" className={classes.submitBtn}>Cancel</button>
+                </div>
 
             </form>
         </main>

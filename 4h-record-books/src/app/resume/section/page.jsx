@@ -14,16 +14,6 @@ function FormCard(props) {
   )
 }
 
-function Buttons(props) {
-  var section = props.section;
-  
-  return (
-    <div className={styles.sectionBtn}>
-      <button type="button" className={styles.btnTitle}>{section}</button>
-    </div>
-  )
-}
-
 function StringCard(props) {
   var text = props.text;
   var name = props.name;

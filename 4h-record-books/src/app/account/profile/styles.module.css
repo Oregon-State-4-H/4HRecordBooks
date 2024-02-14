@@ -1,8 +1,3 @@
-.profileForm {
-    padding: 10px 0px;
-    /* margin-bottom: 100px; */
-}
-
 .label {
     display: grid;
     grid-template-columns: 10ch auto;
@@ -20,11 +15,50 @@
     background: none;
 }
 
+.btns {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.submitBtn {
+    border: 1px solid lightgrey;
+    background: lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+    width: 18vw;
+}
+
+.submitBtn:hover {
+    border: 1px solid var(--beaver-orange);
+    background: var(--beaver-orange);
+}
+
+.alert {
+    border: 1px solid rgb(206 181 186);
+    border-radius: 5px;
+    background-color: rgb(253 232 232);
+}
+
+#alert_msg {
+    padding: 10px;
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 480px) {
     .textInputBox {
         width: 100%;
     }
-    .profileForm {
-        margin-bottom: 100px;
+    .btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    .submitBtn {
+        padding: 8px;
+        width: 43vw;
     }
 }
