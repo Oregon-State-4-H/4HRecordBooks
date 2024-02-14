@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
 
 
-const ResumeViewer = dynamic(() => import("../../components/reports/resume/ResumeViewer"), {
+const ResumeViewer = dynamic(() => import("../../../components/reports/resume/ResumeViewer"), {
   ssr: false,
 });
 

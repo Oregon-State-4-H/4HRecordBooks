@@ -1,6 +1,8 @@
-import ActionBar from '../components/ActionBar';
+// import ActionBar from '../../components/ActionBar';
 import classes from './styles.module.css';
 import Link from 'next/link';
+
+import ActionBar from '@/app/components/ActionBar';
 
 function Card(props) {
   var title = props.title;

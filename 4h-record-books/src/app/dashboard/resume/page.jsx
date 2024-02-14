@@ -3,10 +3,10 @@
 import Link from 'next/link';
 import classes from './styles.module.css';
 import { PDFDownloadLink } from '@react-pdf/renderer';
-import PDFFile from '../components/reports/resume/Resume';
+import PDFFile from '../../components/reports/resume/Resume';
 import { useEffect, useState } from 'react';
 import styles from './styles.module.css';
-import ActionBar from '../components/ActionBar';
+import ActionBar from '@/app/components/ActionBar';
 
 
 function Card(props) {

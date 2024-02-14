@@ -52,7 +52,16 @@ body {
   color: var(--txt-primary);
 }
 
-nav {
+.basicNavBar {
+  background: var(--primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.dashNavBar {
   background: var(--primary);
   display: flex;
   flex-direction: row;
