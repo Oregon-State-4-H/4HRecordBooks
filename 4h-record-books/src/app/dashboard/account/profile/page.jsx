@@ -4,23 +4,23 @@ import { useState } from 'react';
 import ActionBar from '@/app/components/ActionBar';
 import Alert from 'react-bootstrap/Alert';
 
-function updateProfile() {
-    const [info, setInfo] = useState({
-        name: "",
-        gender: "",
-        age: "",
-        dob: "",
-        club: "",
-        leader: "",
-        county: "",
-        yearIn4H: "",
-        project: "",
-        yearInProject: "",
-        projectStartDate: "",
-        projectClosedDate: ""
-    });
+// function updateProfile() {
+//     const [info, setInfo] = useState({
+//         name: "",
+//         gender: "",
+//         age: "",
+//         dob: "",
+//         club: "",
+//         leader: "",
+//         county: "",
+//         yearIn4H: "",
+//         project: "",
+//         yearInProject: "",
+//         projectStartDate: "",
+//         projectClosedDate: ""
+//     });
 
-}
+// }
 
 function Card(props) {
     var text = props.text;
