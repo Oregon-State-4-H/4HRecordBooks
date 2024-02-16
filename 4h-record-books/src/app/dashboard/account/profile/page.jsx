@@ -2,23 +2,23 @@
 import classes from './styles.module.css';
 import { useState } from 'react';
 
-function updateProfile() {
-    const [info, setInfo] = useState({
-        name: "",
-        gender: "",
-        age: "",
-        dob: "",
-        club: "",
-        leader: "",
-        county: "",
-        yearIn4H: "",
-        project: "",
-        yearInProject: "",
-        projectStartDate: "",
-        projectClosedDate: ""
-    });
+// function updateProfile() {
+//     const [info, setInfo] = useState({
+//         name: "",
+//         gender: "",
+//         age: "",
+//         dob: "",
+//         club: "",
+//         leader: "",
+//         county: "",
+//         yearIn4H: "",
+//         project: "",
+//         yearInProject: "",
+//         projectStartDate: "",
+//         projectClosedDate: ""
+//     });
 
-}
+// }
 
 function Card(props) {
     var text = props.text;

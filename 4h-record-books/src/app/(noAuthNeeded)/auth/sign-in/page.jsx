@@ -27,7 +27,7 @@ const SignIn = () => {
 
         <button className={styles.formButton}>Sign Up</button>
 
-        <p className={styles.formText}>Don't have an account? <a href="/auth/sign-up">Sign Up</a></p>
+        <p className={styles.formText}>{"Don't have an account? "}<a href="/auth/sign-up">Sign Up</a></p>
       </div>
     </main>
   );
