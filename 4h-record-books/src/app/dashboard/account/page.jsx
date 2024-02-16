@@ -1,8 +1,6 @@
-// import ActionBar from '../../components/ActionBar';
+import ActionBar from '@/app/components/ActionBar';
 import classes from './styles.module.css';
 import Link from 'next/link';
-
-import ActionBar from '@/app/components/ActionBar';
 
 function Card(props) {
   var title = props.title;
@@ -24,21 +22,34 @@ export default function Account() {
 
       <br></br>
 
-      <h2><b>Account</b></h2>
-      <div className={classes.accountCard}>
-        <Card title="Edit Profile" url="/account/profile" />
+      <div className={classes.summaryCard}>
+        <div className={classes.cardTitle}>Account</div>
+        <div className={classes.accountCard}>
+          <Card title="Edit Profile" url="/dashboard/account/profile" />
+        </div>
       </div>
-      
-      <br></br>
+        
+        <br></br>
 
-      <h2><b>General</b></h2>
-      <div className={classes.accountCard}>
-        <div>Support</div>
-        <div>Terms of Services</div>
-        <div>Invite Friends</div>
-        {/* <Card title="Support"/>
-        <Card title="Terms of Service"/>
-        <Card title="Invite Friends"/> */}
+      <div className={classes.summaryCard}>
+        <div className={classes.cardTitle}>General</div>
+        <div className={classes.accountCard}>
+          <div>Support</div>
+          <div>Terms of Services</div>
+          <div>Invite Friends</div>
+          {/* <Card title="Support"/>
+          <Card title="Terms of Service"/>
+          <Card title="Invite Friends"/> */}
+        </div>
+      </div>
+
+        <br></br>
+
+      <div className={classes.summaryCard}>
+        <div className={classes.cardTitle}>Login</div>
+        <div className={classes.accountCard}>
+          <Card title="Logout" url="/account" />
+        </div>
       </div>
     </main>
   );

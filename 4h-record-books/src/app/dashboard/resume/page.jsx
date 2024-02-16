@@ -35,7 +35,7 @@ const Resume = () => {
       <ActionBar title="My 4-H Resume" disableBack={true} />
       
       <div className={styles.documentContainer}>
-        <Link href={'/resume/preview'} style={{textDecoration:"underline"}}>Preview Resume</Link>
+        <Link href={'resume/preview'} style={{textDecoration:"underline"}}>Preview Resume</Link>
         <br />
 
         { isClient ? 

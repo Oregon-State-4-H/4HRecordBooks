@@ -1,4 +1,7 @@
-import ActionBar from '../../../components/ActionBar';
+"use client";
+
+import { useState } from 'react';
+import ActionBar from '@/app/components/ActionBar';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import styles from './styles.module.css';
@@ -10,16 +13,6 @@ function FormCard(props) {
     <div className={styles.formCard}>
       {children}
       <button type="submit" className={styles.submitBtn}>Submit</button>
-    </div>
-  )
-}
-
-function Buttons(props) {
-  var section = props.section;
-  
-  return (
-    <div className={styles.sectionBtn}>
-      <button type="button" className={styles.btnTitle}>{section}</button>
     </div>
   )
 }
@@ -61,14 +54,19 @@ function NumberCard(props) {
 }
 
 function DropdownCard(props) {
-  var option = props.option;
+  const [isOpen, setIsOpen] = useState(false);
+  var options = props.options;
 
   return (
-    <Dropdown>
-      <Dropdown.Menu>
-        <Dropdown.Item>hi</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
+    <DropdownButton id={styles.dropdownBtn} title="Select a location" onClick={() => setIsOpen(!isOpen)}>
+      {isOpen && (
+        <Dropdown.Menu className={styles.dropdownItemContainer}>
+          {options.map((option, index) => (
+            <Dropdown.Item key={index} id={styles.dropdownBtnItem}>{option}</Dropdown.Item>
+          ))}
+        </Dropdown.Menu>
+      )}
+    </DropdownButton>
   )
 }
 
@@ -102,6 +100,8 @@ function section2() {
 }
 
 function section3() {
+  const section3Arr = ['Local/Club', 'County', 'Regional', 'State', 'National', 'International'];
+
   return (
     <FormCard>
       <NumberCard text="Year" number="2012-13" />
@@ -109,19 +109,22 @@ function section3() {
       <StringCard text="Kind of Activity" name="Record Keeping Clinic" />
       <StringCard text="Things I Learned" name="Stay up-to-date!" />
 
-      {/* <DropdownCard option="Local/Club" /> */}
-
+      <DropdownCard options={section3Arr} />
     </FormCard>
   )
 }
 
 function section4() {
+  const section4Arr = ['Local', 'County', 'Regional', 'State', 'National', 'International'];
+
   return (
     <FormCard>
       <NumberCard text="Year" number="2012-13" />
 
       <StringCard text="Kind of Activity" name="Soccer Team" />
       <TextAreaCard text="What I did and time spent" string="80 practices, 20 games, 300 hours" />
+      
+      <DropdownCard options={section4Arr} />
     </FormCard>
   )
 }
@@ -215,10 +218,13 @@ function section11() {
 }
 
 function section12() {
+  const section12Arr = ['Local', 'County', 'Regional', 'State', 'National', 'International'];
+
   return (
     <FormCard>
       <NumberCard text="Year" number="2012-13" />
-
+      
+      <DropdownCard options={section12Arr} />
     </FormCard>
   )
 }
