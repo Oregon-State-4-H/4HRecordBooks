@@ -1,0 +1,53 @@
+.label {
+    display: grid;
+    grid-template-columns: 10ch auto;
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.textInputBox {
+    padding: 10px 0px 10px 5px;
+    border: none;
+    width: 30vw;
+    border-bottom: 1px solid lightgrey;
+    background: none;
+}
+
+.btns {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.submitBtn {
+    border: 1px solid lightgrey;
+    background: lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+    width: 18vw;
+}
+
+.submitBtn:hover {
+    border: 1px solid var(--beaver-orange);
+    background: var(--beaver-orange);
+}
+
+@media screen and (max-width: 480px) {
+    .textInputBox {
+        width: 100%;
+    }
+    .btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    .submitBtn {
+        padding: 8px;
+        width: 43vw;
+    }
+}
