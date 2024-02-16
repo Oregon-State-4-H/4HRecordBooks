@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import ActionBar from '../../components/ActionBar';
+import ActionBar from '@/app/components/ActionBar';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import styles from './styles.module.css';

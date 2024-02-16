@@ -1,6 +1,6 @@
 "use client";
 
-import ActionBar from '../components/ActionBar';
+import ActionBar from '@/app/components/ActionBar';
 import classes from './styles.module.css';
 
 export default function Projects() {

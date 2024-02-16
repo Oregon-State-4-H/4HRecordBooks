@@ -10,7 +10,7 @@
   --txt-primary: #14181b;
   --txt-secondary: #57636c;
   --bg-primary: #f1f4f8;
-  --bk-secondary: #ffffff;
+  --bg-secondary: #ffffff;
   --accent-primary: #4C4B39EF;
   --accent-secondary: #4d39d2c0;
   --accent-tertiary: #4dee8b60;
@@ -35,7 +35,7 @@
     --txt-primary: #ffffff;
     --txt-secondary: #57636c;
     --bg-primary: #000000;
-    --bk-secondary: #1c1a1a;
+    --bg-secondary: #1c1a1a;
     --accent-primary: #4C4B39EF;
     --accent-secondary: #4d39d2c0;
     --accent-tertiary: #4dee8b60;
@@ -52,7 +52,16 @@ body {
   color: var(--txt-primary);
 }
 
-nav {
+.basicNavBar {
+  background: var(--primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.dashNavBar {
   background: var(--primary);
   display: flex;
   flex-direction: row;

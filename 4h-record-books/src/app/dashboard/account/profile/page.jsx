@@ -1,7 +1,7 @@
 "use client";
 import classes from './styles.module.css';
 import { useState } from 'react';
-import ActionBar from '../../components/ActionBar';
+import ActionBar from '@/app/components/ActionBar';
 import Alert from 'react-bootstrap/Alert';
 
 function updateProfile() {

@@ -3,10 +3,10 @@
 import Link from 'next/link';
 import classes from './styles.module.css';
 import { PDFDownloadLink } from '@react-pdf/renderer';
-import PDFFile from '../components/reports/resume/Resume';
+import PDFFile from '../../components/reports/resume/Resume';
 import { useEffect, useState } from 'react';
 import styles from './styles.module.css';
-import ActionBar from '../components/ActionBar';
+import ActionBar from '@/app/components/ActionBar';
 
 
 function Card(props) {
@@ -35,7 +35,7 @@ const Resume = () => {
       <ActionBar title="My 4-H Resume" disableBack={true} />
       
       <div className={styles.documentContainer}>
-        <Link href={'/resume/preview'} style={{textDecoration:"underline"}}>Preview Resume</Link>
+        <Link href={'resume/preview'} style={{textDecoration:"underline"}}>Preview Resume</Link>
         <br />
 
         { isClient ? 
