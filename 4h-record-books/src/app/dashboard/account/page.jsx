@@ -48,7 +48,7 @@ export default function Account() {
       <div className={classes.summaryCard}>
         <div className={classes.cardTitle}>Login</div>
         <div className={classes.accountCard}>
-          <Card title="Logout" url="/account" />
+          <Card title="Logout" url="/" />
         </div>
       </div>
     </main>
