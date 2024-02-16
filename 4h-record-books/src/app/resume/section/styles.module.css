@@ -1,6 +1,28 @@
 .formCard {
     display: flex;
     flex-direction: column;
+    background: var(--bk-secondary);
+    border-radius: 5px;
+    padding: 20px;
+    /* align-items: center;
+    width: 60vw; */
+}
+
+.dropdownItemContainer {
+    background: grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#dropdownBtnItem{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#dropdownBtnItem:hover {
+    border-radius: 5px;;
+    background-color: lightgrey;
 }
 
 .submitBtn {

@@ -36,17 +36,6 @@
     background: var(--beaver-orange);
 }
 
-.alert {
-    border: 1px solid rgb(206 181 186);
-    border-radius: 5px;
-    background-color: rgb(253 232 232);
-}
-
-#alert_msg {
-    padding: 10px;
-    margin-top: 10px;
-}
-
 @media screen and (max-width: 480px) {
     .textInputBox {
         width: 100%;
