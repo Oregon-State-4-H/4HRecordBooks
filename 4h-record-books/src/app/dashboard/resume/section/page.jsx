@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import ActionBar from '@/app/components/ActionBar';
 import styles from './styles.module.css';
+import { CiEdit } from "react-icons/ci";
 
 function FormCard(props) {
   var title = props.title;
@@ -12,7 +13,8 @@ function FormCard(props) {
     <div className={styles.formCard}>
       <div className={styles.sectionHeader}>
         <span className={styles.sectionTitle}>{title}</span>
-        <span id="editInfo">Edit Info</span>
+        <CiEdit />
+        <span id={styles.editInfo}>Edit Info</span>
       </div>
       {children}
       <button type="submit" className={styles.submitBtn}>Submit</button>
