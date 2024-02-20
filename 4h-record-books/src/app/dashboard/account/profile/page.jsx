@@ -2,7 +2,7 @@
 import classes from './styles.module.css';
 import { useState } from 'react';
 import ActionBar from '@/app/components/ActionBar';
-import Alert from 'react-bootstrap/Alert';
+import Link from 'next/link';
 
 // function updateProfile() {
 //     const [info, setInfo] = useState({
@@ -73,7 +73,9 @@ export default function Profile() {
 
                 <div className={classes.btns}>
                     <button type="submit" className={classes.submitBtn}>Update Profile</button>
-                    <button type="submit" className={classes.submitBtn}>Cancel</button>
+                    <Link href={{pathname: "/dashboard/account/"}}>
+                        <button type="submit" className={classes.submitBtn}>Cancel</button>
+                    </Link>
                 </div>
 
             </form>
