@@ -2,15 +2,18 @@
 
 import { useState } from 'react';
 import ActionBar from '@/app/components/ActionBar';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
 import styles from './styles.module.css';
 
 function FormCard(props) {
+  var title = props.title;
   var children = props.children;
 
   return (
     <div className={styles.formCard}>
+      <div className={styles.sectionHeader}>
+        <span className={styles.sectionTitle}>{title}</span>
+        <span id="editInfo">Edit Info</span>
+      </div>
       {children}
       <button type="submit" className={styles.submitBtn}>Submit</button>
     </div>
@@ -54,26 +57,31 @@ function NumberCard(props) {
 }
 
 function DropdownCard(props) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [data, setData] = useState(undefined);
   var options = props.options;
 
+  const onOptionChangeHandler = (event) => {
+    setData(event.target.value);
+  }
+
   return (
-    <DropdownButton id={styles.dropdownBtn} title="Select a location" onClick={() => setIsOpen(!isOpen)}>
-      {isOpen && (
-        <Dropdown.Menu className={styles.dropdownItemContainer}>
-          {options.map((option, index) => (
-            <Dropdown.Item key={index} id={styles.dropdownBtnItem}>{option}</Dropdown.Item>
-          ))}
-        </Dropdown.Menu>
-      )}
-    </DropdownButton>
+    <select className={styles.dropdownBtn} onChange={onOptionChangeHandler}>
+      <option>Please choose one option</option>
+      {options.map((option, index) => {
+        return (
+          <option key={index}>
+            {option}
+          </option>
+        )
+      })}
+    </select>
   )
 }
 
 function section1() {
   return (
-    <FormCard>
-      <NumberCard text="Year" number="2012-13" />
+    <FormCard title="4-H Involvement">
+      <StringCard text="Year" name="2012-13" />
       <NumberCard text="Grade" number="9" />
       
       <StringCard text="Name of Club/Group" name="Oak Grove Clothing Club" />
@@ -90,8 +98,8 @@ function section1() {
 
 function section2() {
   return (
-    <FormCard>
-      <NumberCard text="Year" number="2012-13" />
+    <FormCard title="4-H Project/Program">
+      <StringCard text="Year" name="2012-13" />
       
       <StringCard text="Name of Project/Unit" name="Clothing" />
       <TextAreaCard text="Project Size or Scope" string="1 apron, 2 dresses" />
@@ -103,8 +111,8 @@ function section3() {
   const section3Arr = ['Local/Club', 'County', 'Regional', 'State', 'National', 'International'];
 
   return (
-    <FormCard>
-      <NumberCard text="Year" number="2012-13" />
+    <FormCard title="4-H Activities/Events">
+      <StringCard text="Year" name="2012-13" />
 
       <StringCard text="Kind of Activity" name="Record Keeping Clinic" />
       <StringCard text="Things I Learned" name="Stay up-to-date!" />
@@ -118,8 +126,8 @@ function section4() {
   const section4Arr = ['Local', 'County', 'Regional', 'State', 'National', 'International'];
 
   return (
-    <FormCard>
-      <NumberCard text="Year" number="2012-13" />
+    <FormCard title="Other Community Activities/Events">
+      <StringCard text="Year" name="2012-13" />
 
       <StringCard text="Kind of Activity" name="Soccer Team" />
       <TextAreaCard text="What I did and time spent" string="80 practices, 20 games, 300 hours" />
@@ -131,8 +139,8 @@ function section4() {
 
 function section5() {
   return (
-    <FormCard>
-      <NumberCard text="Year" number="2012-13" />
+    <FormCard title="Leadership in 4-H">
+      <StringCard text="Year" name="2012-13" />
 
       <TextAreaCard text="Leadership Title and Responsibilities" string="Refreshment committee - brought snacks to two meetings" />
 
@@ -144,8 +152,8 @@ function section5() {
 
 function section6() {
   return (
-    <FormCard>
-      <NumberCard text="Year" number="2012-13" />
+    <FormCard title="Leadership in Other Organizations">
+      <StringCard text="Year" name="2012-13" />
 
       <StringCard text="Name of Organization" name="Middle School" />
       <TextAreaCard text="Leadership Responsibilities" string="Student Aid in office; answered phone; greeted visitors" />
@@ -158,8 +166,8 @@ function section6() {
 
 function section7() {
   return (
-    <FormCard>
-      <NumberCard text="Year" number="2012-13" />
+    <FormCard title="Citizenship/Community Service in 4-H">
+      <StringCard text="Year" name="2012-13" />
       
       <TextAreaCard text="What I Did as a Club Member and/or Individual" string="Visited nursing home; introduced my 4-H dog to 4 elderly patients" />
       
@@ -171,8 +179,8 @@ function section7() {
 
 function section8() {
   return (
-    <FormCard>
-      <NumberCard text="Year" number="2012-13" />
+    <FormCard title="Other Citizenship/Community Service">
+      <StringCard text="Year" name="2012-13" />
 
       <TextAreaCard text="What I Did as an Individual or with Another Group" string="Did yard work for elderly neighbors" />
       
@@ -184,8 +192,8 @@ function section8() {
 
 function section9() {
   return (
-    <FormCard>
-      <NumberCard text="Year" number="2012-13" />
+    <FormCard title="Communications in 4-H">
+      <StringCard text="Year" name="2012-13" />
 
       <StringCard text="Type of Communication" name="Demonstration" />
       <StringCard text="Topic" name="How to Straighten Material" />
@@ -201,8 +209,8 @@ function section9() {
 
 function section10() {
   return (
-    <FormCard>
-      <NumberCard text="Year" number="2012-13" />
+    <FormCard title="Communications in Other Organizations">
+      <StringCard text="Year" name="2012-13" />
 
     </FormCard>
   )
@@ -210,8 +218,8 @@ function section10() {
 
 function section11() {
   return (
-    <FormCard>
-      <NumberCard text="Year" number="2012-13" />
+    <FormCard title="Participation in 4-H Contests/Competitions">
+      <StringCard text="Year" name="2012-13" />
 
     </FormCard>
   )
@@ -221,8 +229,8 @@ function section12() {
   const section12Arr = ['Local', 'County', 'Regional', 'State', 'National', 'International'];
 
   return (
-    <FormCard>
-      <NumberCard text="Year" number="2012-13" />
+    <FormCard title=" Participation in Other Contests/Competitions">
+      <StringCard text="Year" name="2012-13" />
       
       <DropdownCard options={section12Arr} />
     </FormCard>
@@ -231,8 +239,8 @@ function section12() {
 
 function section13() {
   return (
-    <FormCard>
-      <NumberCard text="Year" number="2012-13" />
+    <FormCard title="4-H Recognition">
+      <StringCard text="Year" name="2012-13" />
 
       <TextAreaCard text="Type of Recognition" string="Livestock Advancement Certificate - Step 1" />
     </FormCard>
@@ -241,8 +249,8 @@ function section13() {
 
 function section14() {
   return (
-    <FormCard>
-      <NumberCard text="Year" number="2013-13" />
+    <FormCard title="Other Recognition">
+      <StringCard text="Year" name="2012-13" />
       
       <TextAreaCard text="Type of Recognition" string="Spelling Champion for Grade 9" />
     </FormCard>

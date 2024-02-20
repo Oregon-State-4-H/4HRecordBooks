@@ -1,33 +1,52 @@
 .formCard {
+    background-color: var(--bg-secondary);
     display: flex;
     flex-direction: column;
-    background: var(--bk-secondary);
     border-radius: 5px;
     padding: 20px;
-    /* align-items: center;
-    width: 60vw; */
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.dropdownItemContainer {
-    background: grey;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-#dropdownBtnItem{
+.sectionHeader {
+    /* position: relative; */
     display: flex;
-    flex-direction: column;
-    padding: 10px;
+    align-items: center;
+    width: 55vw;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
-#dropdownBtnItem:hover {
-    border-radius: 5px;;
-    background-color: lightgrey;
+.sectionTitle {
+    /* padding: 10px; */
+    color: var(--text-primary);
+    font-size: 1.55rem;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+    /* color: var(--beaver-orange); */
+}
+
+#editInfo {
+    font-size: 18px;
+    margin-left: auto;
+}
+
+.dropdownBtn {
+    background: darkgrey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 48vw;
 }
 
 .submitBtn {
-    border: 1px solid lightgrey;
-    background: lightgrey;
+    border: 1px solid var(--beaver-orange);
+    background: var(--beaver-orange);
     border-radius: 5px;
     padding: 5px;
     margin-top: 20px;
@@ -57,6 +76,18 @@
 }
 
 @media screen and (max-width: 480px) {
+    .formCard {
+        width: 100%;
+    }
+
+    .sectionHeader {
+        width: 100%;
+    }
+    
+    .dropdownBtn {
+        width: 100%;
+    }
+
     .submitBtn {
         width: 100%;
     }
