@@ -56,20 +56,21 @@ export default function Profile() {
             <ActionBar title="Edit Profile" />
             {/* <h1><b>Edit Profile</b></h1> */}
             <form className={classes.profileForm}>
-                <Card text="Name" input="Demo User" />
-                <Card text="Gender" input="Female" />
+                <Card text="First Name" input="John" />
+                <Card text="Middle Name Initial" input="J" />
+                <Card text="Last Name Initial" input="D" />
 
-                <NumberCard text="Age" numInput="10" />
-                <NumberCard text="Year Born" numInput="2014" />
+                {/* <NumberCard text="Age" numInput="10" /> */}
+                <NumberCard text="Date of Birth" numInput="2014" />
 
-                <label className={classes.label}>
+                {/* <label className={classes.label}>
                     Email
                     <input className={classes.textInputBox} type="email" value={email} onChange={event => {setEmail(event.target.value)}} placeholder="demouser@gmail.com" />
-                </label>
+                </label> */}
                 
                 <Card text="County" input="Benton" />
                 
-                <NumberCard text="Year In 4-H" numInput="2016" />
+                {/* <NumberCard text="Year In 4-H" numInput="2016" /> */}
 
                 <div className={classes.btns}>
                     <button type="submit" className={classes.submitBtn}>Update Profile</button>
