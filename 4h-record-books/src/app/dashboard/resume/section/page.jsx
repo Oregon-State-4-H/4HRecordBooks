@@ -13,10 +13,14 @@ function FormCard(props) {
     <div className={styles.formCard}>
       <div className={styles.sectionHeader}>
         <span className={styles.sectionTitle}>{title}</span>
-        <CiEdit />
-        <span id={styles.editInfo}>Edit Info</span>
+        <div className={styles.editInfoContainer}>
+          <CiEdit />
+          <span id={styles.editInfo}>Edit Info</span>
+        </div>
       </div>
-      {children}
+      <div className={styles.children}>
+        {children}
+      </div>
       <button type="submit" className={styles.submitBtn}>Submit</button>
     </div>
   )

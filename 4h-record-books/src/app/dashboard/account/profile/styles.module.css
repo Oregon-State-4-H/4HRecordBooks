@@ -12,6 +12,7 @@
 }
 
 .label {
+    font-size: 18px;
     display: grid;
     grid-template-columns: 10ch auto;
     grid-gap: 1rem;
