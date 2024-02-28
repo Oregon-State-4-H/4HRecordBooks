@@ -1,5 +1,5 @@
 # Software Development Process
-Last Updated: 12/3/2023
+Last Updated: 2/27/2024
 
 ## Principles
 To facilitate a smooth development cycle, the following section outlines principles this team has decided to enforce to create a stable development environment.
@@ -73,7 +73,7 @@ Dedicated roles have been assigned to each team member. The following dictates t
 | Linting and Formatting | Prettier |
 | CI/CD | GitHub Actions |
 | IDE | Visual Studio Code |
-| Graphic Design | Figma |
+| Graphic Design | FlutterFlow |
 | Others | Potentially Docker |
 
 ## Definition of Done (DoD)
