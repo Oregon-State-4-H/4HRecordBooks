@@ -1,0 +1,473 @@
+{
+    "user": {
+        "_id": "5f3f3e3e3e3e3e3e3e3e3e3e",
+        "email": "john.doe@gmail.com",
+        "firstname": "John",
+        "middleInitial": "J",
+        "lastInitial": "D",
+        "county": "Benton",
+        "dob": "1990-01-01",
+        "dateJoined": "2020-08-21"
+    },
+    "section1": [
+        {
+          "year": "2019-20",
+          "grade": "9",
+          "clubname": "4-H Club",
+          "clubsize": "10",
+          "clubLeader": "John Doe",
+          "meetingsHeld": "10",
+          "meetingsAttended": "10"
+        },
+        {
+          "year": "",
+          "grade": "9",
+          "clubname": "Yamhill County 4-H",
+          "clubsize": "15",
+          "clubLeader": "Jane Doe",
+          "meetingsHeld": "15",
+          "meetingsAttended": "15"
+        },
+        {
+          "year": "2020-21",
+          "grade": "10",
+          "clubname": "4-H Club",
+          "clubsize": "10",
+          "clubLeader": "John Doe",
+          "meetingsHeld": "10",
+          "meetingsAttended": "10"
+        },
+        {
+          "year": "",
+          "grade": "10",
+          "clubname": "Yamhill County 4-H",
+          "clubsize": "15",
+          "clubLeader": "Jane Doe",
+          "meetingsHeld": "15",
+          "meetingsAttended": "15"
+        },
+        {
+          "year": "2021-22",
+          "grade": "11",
+          "clubname": "4-H Club",
+          "clubsize": "10",
+          "clubLeader": "John Doe",
+          "meetingsHeld": "10",
+          "meetingsAttended": "10"
+        },
+        {
+          "year": "",
+          "grade": "11",
+          "clubname": "Yamhill County 4-H",
+          "clubsize": "15",
+          "clubLeader": "Jane Doe",
+          "meetingsHeld": "15",
+          "meetingsAttended": "15"
+        }
+    ],
+    "section2": [
+        {
+            "year": "2019-20",
+            "name": "Horses",
+            "scope": "1 Horse"
+        },
+        {
+            "year": "",
+            "name": "Lambs",
+            "scope": "2 Lambs"
+        },
+        {
+            "year": "2020-21",
+            "name": "Horses",
+            "scope": "2 Horses"
+        },
+        {
+            "year": "",
+            "name": "Lambs",
+            "scope": "3 Lambs"
+        },
+        {
+            "year": "2021-22",
+            "name": "Lambs",
+            "scope": "2 Lambs"
+        },
+        {
+            "year": "",
+            "name": "Tech Wizards",
+            "scope": "Designed a webpage; 2 Remote Operated Vehicles"
+        }
+    ],
+    "section3": [
+        {
+            "year": "2019-20",
+            "activity": "Horse Camp",
+            "learned": "learned how to care for horses",
+            "region": "State"
+        },
+        {
+            "year": "",
+            "activity": "Photography Clinic",
+            "learned": "How to take better close-ups",
+            "region": "Local"
+        },
+        {
+            "year": "2020-21",
+            "activity": "4-H Camp",
+            "learned": "learned how to build a campfire",
+            "region": "regional"
+        },
+        {
+            "year": "",
+            "activity": "Camp Counselor training",
+            "learned": "learned how to work with younger members",
+            "region": "State"
+        },
+        {
+            "year": "2021-22",
+            "activity": "National Leadership Conference",
+            "learned": "learned how to be a better leader",
+            "region": "National"
+        }
+    ],    
+    "section4": [
+        {
+            "year": "2019-20",
+            "activity": "Soccer Team",
+            "description": "80 practices; 20 games, 300 hours",
+            "region": "Local"
+        },
+        {
+            "year": "",
+            "activity": "Band",
+            "description": "50 lessons, 2 performances, 200 hours",
+            "region": "Local"
+        },
+        {
+            "year": "2020-21",
+            "activity": "Soccer Team",
+            "description": "120 practices; 20 games, 400 hours",
+            "region": "County"
+        }
+    ],
+    "section5": [
+        {
+            "year": "2019-20",
+            "description": "Refreshment committee - brought snacks to two meetings",
+            "hours": "1",
+            "people": "14"
+        },
+        {
+            "year": "",
+            "description": "Camp Counselor – 50 youth, taught crafts",
+            "hours": "40",
+            "people": "50"
+        },
+        {
+            "year": "2020-21",
+            "description": "Club Secretary – Took notes at 10 meetings",
+            "hours": "2",
+            "people": "14"
+        }
+    ],
+    "section6": [
+        {
+            "year": "2019-20",
+            "organization": "Middle School",
+            "description": "Student Aid in office; answered phone; greeted visitors",
+            "hours": "50",
+            "people": "1000"
+        },
+        {
+            "year": "2020-21",
+            "organization": "High School",
+            "description": "Student Council Vice-President",
+            "hours": "20",
+            "people": "1000"
+        },
+        {
+            "year": "",
+            "organization": "Soccer Club",
+            "description": "Team Captain",
+            "hours": "10",
+            "people": "20"
+        }
+    ],
+    "section7": [
+        {
+            "year": "2019-20",
+            "description": "Visited nursing home; introduced my 4-H dog to 4 elderly patients",
+            "hours": "4",
+            "people": "15"
+        },
+        {
+            "year": "",
+            "description": "Club assembled Thanksgiving food basket for family of 6",
+            "hours": "1",
+            "people": "6"
+        },
+        {
+            "year": "",
+            "description": "County fairgrounds clean-up; weeded flower beds by entrance",
+            "hours": "3",
+            "people": "100"
+        },
+        {
+            "year": "2020-21",
+            "description": "Fairgrounds work day; painted beef barns",
+            "hours": "4",
+            "people": "500"
+        },
+        {
+            "year": "",
+            "description": "Wrote 10 letters to military with the County Ambassador team",
+            "hours": "2",
+            "people": "20"
+        }
+    ],
+    "section8": [
+        {
+            "year": "2019-20",
+            "description": "Did yard work for elderly neighbors",
+            "hours": "5",
+            "people": "2"
+        },
+        {
+            "year": "",
+            "description": "Made campaign posters for school board candidate",
+            "hours": "4",
+            "people": "10"
+        },
+        {
+            "year": "2020-21",
+            "description": "Oregon beach clean-up with church youth group",
+            "hours": "5",
+            "people": "1000"
+        },
+        {
+            "year": "",
+            "description": "Donated food for school drive",
+            "hours": "1",
+            "people": "100"
+        }
+    ],    
+    "section9": [
+        {
+            "year": "2019-20",
+            "type": "Demonstration",
+            "topic": "How to Straighten Material",
+            "timesGiven": "2",
+            "location": "Club & County",
+            "size": "73"
+        },
+        {
+            "year": "",
+            "type": "Newspaper Article",
+            "topic": "International Exchange",
+            "timesGiven": "1",
+            "location": "Oregonian",
+            "size": "185,000"
+        },
+        {
+            "year": "2020-21",
+            "type": "Illustrated Talk",
+            "topic": "Bathing a Sheep",
+            "timesGiven": "3",
+            "location": "Club, County, and State Fair",
+            "size": "15"
+        },
+        {
+            "year": "",
+            "type": "Educational Display",
+            "topic": "Breeds of Sheep",
+            "timesGiven": "2",
+            "location": "County and State Fair",
+            "size": "2000"
+        },
+        {
+            "year": "",
+            "type": "Speech to Rotary Club",
+            "topic": "What 4-H Has Taught Me",
+            "timesGiven": "1",
+            "location": "County",
+            "size": "25"
+        },
+        {
+            "year": "",
+            "type": "Interview Judging",
+            "topic": "Photo, Art, and Science",
+            "timesGiven": "3",
+            "location": "County",
+            "size": "6"
+        },
+        {
+            "year": "",
+            "type": "Oral Reasons",
+            "topic": "Livestock Judging Contest",
+            "timesGiven": "3",
+            "location": "County",
+            "size": "1"
+        },
+        {
+            "year": "",
+            "type": "Video",
+            "topic": "How to Shear a Sheep",
+            "timesGiven": "N/A",
+            "location": "YouTube",
+            "size": "86 Views"
+        }
+    ],
+    "section10": [
+        {
+            "year": "2019-20",
+            "type": "Oral Book Report",
+            "topic": "Oregon Trail",
+            "timesGiven": "1",
+            "location": "School",
+            "size": "35"
+        },
+        {
+            "year": "",
+            "type": "Scripture Reading",
+            "topic": "Different Each week",
+            "timesGiven": "10",
+            "location": "Church",
+            "size": "150"
+        },
+        {
+            "year": "2020-21",
+            "type": "Science Fair Display",
+            "topic": "Recycling Study",
+            "timesGiven": "1",
+            "location": "School",
+            "size": "30"
+        },
+        {
+            "year": "",
+            "type": "TV Story",
+            "topic": "Interviewed regarding soccer team",
+            "timesGiven": "1",
+            "location": "KGW TV",
+            "size": "5000"
+        },
+        {
+            "year": "",
+            "type": "Website",
+            "topic": "FFA chapter information",
+            "timesGiven": "N/A",
+            "location": "www.----",
+            "size": "50 Members"
+        }
+    ],    
+    "section11": [
+        {
+            "year": "2019-20",
+            "event": "County Fair",
+            "description": "Horse: showmanship, western equitation, trail, ground training, jumping, dressage",
+            "award": "3 blues, 2 reds, 1 white"
+        },
+        {
+            "year": "",
+            "event": "State Fair",
+            "description": "Sheep: showmanship, market lamb",
+            "award": "2 blues, 1 red"
+        },
+        {
+            "year": "",
+            "event": "County Fair",
+            "description": "Clothing: 1 dress phase 2; 2 articles for home",
+            "award": "1 blue, 2 reds"
+        },
+        {
+            "year": "2020-21",
+            "event": "County Judging Contest",
+            "description": "Livestock",
+            "award": "1 blue"
+        },
+        {
+            "year": "",
+            "event": "County Presentation Contest",
+            "description": "Illustrated Talk",
+            "award": "1 blue"
+        },
+        {
+            "year": "",
+            "event": "Spring Horse Classic - State",
+            "description": "Illustrated Talk",
+            "award": "3rd place individual presentation"
+        }
+    ],
+    "section12": [
+        {
+            "year": "2019-20",
+            "event": "Chess Tournament",
+            "recognition": "3rd Place",
+            "region": "Local"
+        },
+        {
+            "year": "2020-21",
+            "event": "FFA Livestock Judging",
+            "recognition": "2nd Place Team",
+            "region": "State"
+        },
+        {
+            "year": "",
+            "event": "Mid-Valley Paint Show",
+            "recognition": "4th place English Equitation",
+            "region": "regional"
+        },
+        {
+            "year": "",
+            "event": "State Debate finals",
+            "recognition": "Participant; did not place",
+            "region": "State"
+        }
+    ],    
+    "section13": [
+        {
+            "year": "2019-20",
+            "description": "Livestock Advancement Certificate - Step 1"
+        },
+        {
+            "year": "",
+            "description": "Top Intermediate Record Book"
+        },
+        {
+            "year": "",
+            "description": "County Fair Intermediate Sheep Showmanship - Champion"
+        },
+        {
+            "year": "2020-21",
+            "description": "County Medal - Sheep"
+        },
+        {
+            "year": "",
+            "description": "National 4-H Conference Delegate"
+        },
+        {
+            "year": "",
+            "description": "Selected for State 4-H Ambassador Team"
+        }
+    ],    
+    "section14": [
+        {
+            "year": "2019-20",
+            "description": "Spelling Champion for grade 9"
+        },
+        {
+            "year": "",
+            "description": "Student of the Month for March"
+        },
+        {
+            "year": "",
+            "description": "First Aid Certificate"
+        },
+        {
+            "year": "2020-21",
+            "description": "Eagle Scout Rank"
+        },
+        {
+            "year": "",
+            "description": "Hunter Safety Certificate"
+        }
+    ]
+}
