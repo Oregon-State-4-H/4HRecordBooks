@@ -1,3 +1,54 @@
+.table {
+    width: 100%;
+    background-color: var(--bg-secondary);
+}
+
+.table th {
+    text-align: center;
+    background-color: var(--beaver-orange);
+}
+  
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.table li {
+    padding: 5px;
+}
+
+.sectionHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.sectionTitle {
+    color: var(--text-primary);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+#addInfo {
+    margin-left: 5px;
+}
+
+.addInfoContainer {
+    font-size: 18px;
+    padding-top: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    right: 0;
+    left: 0;
+}
+
 .formCard {
     background-color: var(--bg-secondary);
     display: flex;
@@ -9,41 +60,6 @@
     width: 60vw;
     margin-left: auto;
     margin-right: auto;
-}
-
-.sectionHeader {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 55vw;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-
-.sectionTitle {
-    /* padding: 10px; */
-    color: var(--text-primary);
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    flex-grow: 1;
-    /* color: var(--beaver-orange); */
-}
-
-#editInfo {
-    margin-left: 5px;
-}
-
-.editInfoContainer {
-    font-size: 18px;
-    padding-top: 10px;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    right: 0;
-    left: 0;
 }
 
 .dropdownBtn {
