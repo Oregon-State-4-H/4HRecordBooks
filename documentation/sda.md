@@ -15,7 +15,7 @@ The Record Books application is designed to focus on the 4-H résumé and genera
 Data collected and this application should adhere to the following standards: only required data is collected, data is separated and is only visible to concerned parties, and should follow standard relational database guidelines.
 
 ## System Overview
-![Ststem Overview](SystemOverview.png)
+![Ststem Overview](SystemOverview_Rev2.png)
 
 
 ## Architectural Patterns
@@ -35,7 +35,7 @@ The database is responsible for the storing of user and application data. It is 
 Third-party modules, such as barcode lookup and react-PDF, are crucial to the success of this product. The barcode lookup API allows users to scan product barcodes to record purchased products. The react-PDF API is what creates the automatic reports, which is one of the Center features of this product. 3rd party modules are responsible for alleviating the amount of custom code needed for the application.
 
 ## Data Management
-The database will use a rational structure that can connect entities such as youth, mentors, projects, purchases, events, etc. A REST API will be created to facilitate CRUD operations for user and application data. The application database should maintain at least normalization form (NF) level 2, striving for NF3 if possible and seen as appropriate.
+The database will use a rational structure that can connect entities such as youth, projects, purchases, events, etc. A REST API will be created to facilitate CRUD operations for user and application data.
 
 ## Interface Design
 ### Projects
@@ -66,7 +66,7 @@ This template is used as a general standard for working with logs such as vaccin
 ### Security
 One of the biggest considered security concerns for the Record Books Application is the leaking or misuse of Youth information. The application targets users that are branching from ages 9-18, which majority of this bracket falls under the category of being a minor. To combat potential security leaks, the following will be implemented, for all types of users. 
 - **Authentication:** The project will first require authentication of a user. Examples of authentication can be phone number, email/password, and logging in with Google. 
-- **Limited Visibility:** Once authenticated, users will only have the availability to view projects they are tagged in. For students, this means they are only able to see projects that they have created. For mentors, they can only view projects in which they have been assigned to, and they can only see the students assigned to those particular projects. The only stretch to this rule, should such a feature be created, would be students can see other students and mentors who are associated with the same club.
+- **Limited Visibility:** Once authenticated, users will only have the availability to view projects they are tagged in. For students, this means they are only able to see projects that they have created.
 - **Data Transmission:** The application shall force the use of HTTPS and use SSL/TLS for secure data transmissions between the application and the database.
 Web Application Attacks: The application needs to be able to combat security threats such as SQL injection, insecure direct object references, URL restriction failures, etc. To do this, the application shall minimize the amount of customizable and dynamic user inputs, run input validation, use generic identifiers when possible, and check authorization/source of incoming information/requests.
 

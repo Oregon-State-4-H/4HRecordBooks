@@ -1,21 +1,18 @@
 # Product Requirements Document
-Last Updated: 12/3/2023
+Last Updated: 2/27/2024
 
 ## Product Description
 Youth in 4-H have an old and inefficient tracking system for tracking the progress of their 4-H projects. The current process involves youth printing and manually filling out report books, some of which are almost 50 years old. While some forms have been made into fillable PDFs, formatting causes problems when trying to import them into Word. The current system is difficult to manage and can often lead to losses of records and valuable project information. 
 
-Mentors working with youth on their projects are not able to efficiently see and give feedback on reports until after the work of writing reports is already done. Mentors must also be in physical contact with the youth to be able to transfer paperwork between the two parties.
 
 ## Scope
 The primary scope of this product is to allow youth to track the progress of their project and to generate reports requested by a youth automatically. The list of supported reports will primarily focus on the 4-H résumé and the General Animal Science record books. Stretch goals for this product are to also include automatic report generation for the other project areas which include but are not limited to: livestock records, STEM records, horticulture records, and expressive art records.
 
-The target users of this product are limited to youth and mentors in 4-H in the State of Oregon.
 
 ## Use Cases
 - Users will log purchases made for their project. The user will download a budget report to see all purchases made for the project. 
 - Users will track projects over time to build up a resume. Users will download and print resumes to show off skills they have learned and to report project histories. 
 - Users will log volunteer hours and divide the hours into proper categories. The users will see these logged hours in the proper table on the resume. 
-- Mentors will review mentee reports and give feedback.
 
 ## Purpose and Vision (Background)
 Our purpose is to develop a reporting platform that allows users to track the progress of their projects and items for their 4-H Resume. The product will allow users to export their logged data and create automatically formatted reports at any given time. Items for the 4-H Resume that can be logged are hours and experiences for things like volunteer hours, leadership hours, and club involvement. The end goal of this product would be to develop a platform that works for any 4-H project, regardless of project type.
@@ -35,9 +32,6 @@ The project partner is responsible for representing the 4-H organization and inf
 
 ### 4-H Youth
 Although youth are not considered decision-makers for this project, they are the primary users of the product and, therefore, have a stake in its success.
-
-### 4-H Mentors
-Mentors are not considered to be decision-makers for this project but are one of the primary users of the product and, therefore, hold a stake in the success of the product.
 
 ## Preliminary Context
 ### Assumptions
@@ -83,18 +77,6 @@ This appears to be the only application available, but it was recommended at the
 | **Residence** | Rural | **Values** | Eddie is a realist. |
 | **Personal Quote** | “Working on my 4-H projects has taught me a lot about how to manage finances and present in front of people.” | **Attitudes** | Eddie is cautious and committed to what he puts his mind to. |
 
-### Persona 2 (Mentor)
-|  | Description |  | Biography |
-| ------ | ------ | ------ | ------ |
-| **Persona Name** | Mark Zarker | **Professional goals** | Mark is working on his Ph.D in agricultural studies so he can speak at world conferences. |
-| **Persona Role** | 4-H Mentor | **Motivators** | Mark would like to present research at world agricultural conferences. |
-| **Age** | 38 | **Challenges** | Mark is very busy trying to manage traveling for work and his Ph.D studies. |
-| **Gender** | Male | **Sources of information** | Mark uses peer-verified research and personal studies. |
-| **Education** | Masters degree | **Lifestyle** | Mark lives in a small house with his wife and dog. |
-| **Income** | $115,000 | **Personal interests** | Mark enjoys working with his university’s  4-H extension. |
-| **Residence** | Sub-urban | **Values** | Mark values working with youth. |
-| **Personal Quote** | “There is nothing more important than teaching youth the skills needed to live in this world.” | **Attitudes** | Mark is dedicated to completing his tasks with a high quality standard. |
-
 ## Requirements
 ### User Stories and Features (Functional Requirements)
 #### 4-H Resume
@@ -108,7 +90,6 @@ This appears to be the only application available, but it was recommended at the
 - As a youth, I should be able to log Recognitions, so that it shows up in my 4-H Resume.
 - As a youth, I should be able to print an automatically generated 4-H Resume, so I can hand it in during fair.
 - As a youth, I should be able to log into my individual youth account, so that I can access my individual information.
-- As a mentor, I want to see my youth’s reports, so that I can track their progress and give them feedback when needed.
 
 #### General Animal Science Record
 - As a youth, I should be able to log my Animal Inventory, so that it shows up in my 4-H project.
@@ -121,7 +102,6 @@ This appears to be the only application available, but it was recommended at the
 - As a youth, I should be able to log my Financial Summary, so that it shows up in my 4-H project.
 - As a youth, I should be able to print an automatically generated 4-H Animal Science Record, so that I can hand it in during fair.
 - As a youth I should be able to log into my individual youth account, so that I can access information about my project.
-- As a mentor, I want to see my youth’s project reports, so that I  can track their progress and give them feedback when needed.
 
 
 
@@ -137,7 +117,6 @@ This appears to be the only application available, but it was recommended at the
 | As a youth, I should be able to log Recognitions, so that it shows up in my 4-H Resume. | 4-H Resume Reporting | High | N/A | Logging and Automatic Report Generation |
 | As a youth, I should be able to print an automatically generated 4-H Resume, so I can hand it in during fair. | 4-H Resume Reporting | High | N/A | Logging and Automatic Report Generation |
 | As a youth, I should be able to log into my individual youth account, so that I can access my individual information. | User Profile | High | N/A | Authentication and User services |
-| As a mentor, I want to see my youth’s reports, so that I can track their progress and give them feedback when needed. | Reporting | Medium | N/A | Logging and Automatic Report Generation |
 | As a youth, I should be able to log my Animal Inventory, so that it shows up in my 4-H project. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
 | As a youth, I should be able to log my Equipment Inventory, so that it shows up in my 4-H project. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
 | As a youth, I should be able to log my Supplies Inventory, so that it shows up in my 4-H project. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
@@ -148,7 +127,6 @@ This appears to be the only application available, but it was recommended at the
 | As a youth, I should be able to log my Financial Summary, so that it shows up in my 4-H project. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
 | As a youth, I should be able to print an automatically generated 4-H Animal Science Record, so that I can hand it in during fair. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
 | As a youth I should be able to log into my individual youth account, so that I can access information about my project. | User Profile | High | N/A | Authentication and User Services |
-| As a mentor, I want to see my youth’s project reports, so that I  can track their progress and give them feedback when needed. | Animal Science Reporting | High | N/A | Logging and Automatic Report Generation |
 
 
 ### Non-Functional Requirements
@@ -165,13 +143,13 @@ This appears to be the only application available, but it was recommended at the
 - The app must take users with disabilities into consideration.
 
 ### Data Requirements
-| Youth Information | Mentor Information |
-| ------ | ------ |
-| <ul><li>First name<li>Last name<li>Birthday<li>4-H association<li>Gender<li>Project List<li>Email<li>Phone number<li>Parent contact information </ul> | <li>First name<li>Last name<li>4-H association<li>Gender<li>Project<li>List (associated by youth)<li>Email<li>Phone number </ul>|
+| Youth Information |
+| ------ |
+| <ul><li>First name<li>Last name<li>Birthday<li>4-H association<li>Gender<li>Project List<li>Email<li>Phone number<li>Parent contact information </ul> |
 
 | Project | Livestock | Product Purchase |
 | ------ | ------ | ------ |
-| <ul><li>Associated youth<li>Associated mentor<li>Project type</ul>| <ul><li>Associated project<li>Animal type<li>Name<li>Photo </ul>| <ul><li>Associated project<li>Product name<li>Product UPC<li>Quantity<li>Cost<li>Purchase type </ul>|
+| <ul><li>Associated youth<li>Project type</ul>| <ul><li>Associated project<li>Animal type<li>Name<li>Photo </ul>| <ul><li>Associated project<li>Product name<li>Product UPC<li>Quantity<li>Cost<li>Purchase type </ul>|
 
 
 ### Integration Requirements
