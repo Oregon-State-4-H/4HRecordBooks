@@ -65,26 +65,22 @@ function FormCard({ onClose, children }) {
 
 function StringCard(props) {
   var text = props.text;
-  // var name = props.name;
 
   return (
       <label className={styles.label}>
           {text}
           <input className={styles.textInputBox} type="text" />
-          {/* <input className={styles.textInputBox} type="text" placeholder={name} /> */}
       </label>
   )
 }
 
 function TextAreaCard(props) {
   var text = props.text;
-  // var string = props.string;
 
   return (
       <label className={styles.label}>
           {text}
           <textarea className={styles.textInputBox} type="text" />
-          {/* <textarea className={styles.textInputBox} type="text" placeholder={string} /> */}
       </label>
   )
 }
@@ -133,7 +129,7 @@ function addInfo3Columns(closeModal, col2, col3) {
   )
 }
 
-function addInfo4Columns(closeModal, col2, col3, col4, col5) {
+function addInfo5Cols(closeModal, col2, col3, col4, col5) {
   return (
     <FormCard onClose={closeModal}>
       <StringCard text="Year" />
@@ -252,7 +248,7 @@ function section5() {
   return (
     <>
       <TableCard title="Leadership in Other Organizations" data={data} headers={headers} handleClick={() => setShowFormCard(true)} />
-      {showFormCard && addInfo4Columns(closeModal, "Leadership Title and Responsibilities", "Hours Spent", "Number of People Reached")}
+      {showFormCard && addInfo5Cols(closeModal, "Leadership Title and Responsibilities", "Hours Spent", "Number of People Reached")}
     </>
   )
 }
@@ -269,7 +265,7 @@ function section6() {
   return (
     <>
       <TableCard title="Leadership in Other Organizations" data={data} headers={headers} handleClick={() => setShowFormCard(true)} />
-      {showFormCard && addInfo4Columns(closeModal, "Name of Organization", "Leadership Responsibilities", "Hours Spent", "Number of People Reached")}
+      {showFormCard && addInfo5Cols(closeModal, "Name of Organization", "Leadership Responsibilities", "Hours Spent", "Number of People Reached")}
     </>
   )
 }
@@ -286,7 +282,7 @@ function section7() {
   return (
     <>
       <TableCard title="Citizenship/Community Service in 4-H" data={data} headers={headers} handleClick={() => setShowFormCard(true)} />
-      {showFormCard && addInfo4Columns(closeModal, "What I Did as a Club Member and/or Individual", "Hours Served", "Number of People Reached")}
+      {showFormCard && addInfo5Cols(closeModal, "What I Did as a Club Member and/or Individual", "Hours Served", "Number of People Reached")}
     </>      
   )
 }
@@ -303,7 +299,7 @@ function section8() {
   return (
     <>
       <TableCard title="Other Citizenship/Community Service" data={data} headers={headers} handleClick={() => setShowFormCard(true)} />
-      {showFormCard && addInfo4Columns(closeModal, "What I Did as an Individual or with Another Group", "Hours Served", "Number of People Reached")}
+      {showFormCard && addInfo5Cols(closeModal, "What I Did as an Individual or with Another Group", "Hours Served", "Number of People Reached")}
     </>
   )
 }
