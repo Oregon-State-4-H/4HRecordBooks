@@ -2,6 +2,8 @@ import Link from 'next/link'
 import styles from "./styles.module.css"
 import ActionBar from '@/app/components/ActionBar';
 
+import { getSession } from "@auth0/nextjs-auth0";
+import { redirect } from "next/navigation";
 
 function Card(props) {
   var title = props.title;
@@ -14,7 +16,13 @@ function Card(props) {
   )
 }
 
-export default function Dashboard() {
+export default async function Dashboard() {
+  
+  const session = await getSession();
+  if (!session?.user) {
+    redirect("/api/auth/login");
+  }
+
   return (
     <main>
       <ActionBar title="Home" disableBack={true} />

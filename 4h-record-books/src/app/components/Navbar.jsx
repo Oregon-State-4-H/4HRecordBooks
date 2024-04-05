@@ -14,7 +14,7 @@ export default function Navbar(props){
         <div className='navGroup'>
           <Link href='/about' className='navItem'>About</Link>
           <Link href='/dashboard' className='navItem'>Go to Dashboard</Link>
-          <Link href='/auth/sign-up' className='navItem'>Sign up/Sign in</Link>
+          <Link href='../api/auth/login' className='navItem'>Sign up/Sign in</Link>
         </div>
       </nav>
     )

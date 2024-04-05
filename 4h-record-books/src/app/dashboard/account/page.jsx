@@ -2,6 +2,12 @@ import ActionBar from '@/app/components/ActionBar';
 import classes from './styles.module.css';
 import Link from 'next/link';
 
+
+import { getSession } from "@auth0/nextjs-auth0";
+import { redirect } from "next/navigation";
+import connectDB from "../../lib/mongodb.js";
+import { ObjectId } from "mongodb";
+
 function Card(props) {
   var title = props.title;
   var url = props.url;
@@ -13,12 +19,28 @@ function Card(props) {
   )
 }
 
-export default function Account() {
+export default async function Account() {
+
+  const session = await getSession();
+
+  if (!session?.user) {
+    redirect("../api/auth/login");
+  }
+
+  
+  const userID = ObjectId.createFromHexString(session.user.sub.substring(6));
+  const db = await connectDB();
+  const user = await db.collection('users').findOne(userID);
+  console.log("user:", user)
+
+
+  
+
   return (
     <main>
       <ActionBar title="Account" disableBack={true} />
-      <h1><b>Demo User</b></h1>
-      <p>demouser@gmail.com</p>
+      <h1><b>{user.given_name} {user.family_name}</b></h1>
+      <p>{user.email}</p>
 
       <br></br>
 
@@ -48,7 +70,7 @@ export default function Account() {
       <div className={classes.summaryCard}>
         <div className={classes.cardTitle}>Login</div>
         <div className={classes.accountCard}>
-          <Card title="Logout" url="/" />
+          <Card title="Logout" url="../api/auth/logout" />
         </div>
       </div>
     </main>
