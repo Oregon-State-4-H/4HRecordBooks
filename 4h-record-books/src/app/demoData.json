@@ -9,6 +9,33 @@
         "dob": "1990-01-01",
         "dateJoined": "2020-08-21"
     },
+    "projects": [
+        {
+            "name": "Horses",
+            "year": "2019-20",
+            "description": "Learned how to care for horses"
+        },
+        {
+            "name": "Lambs",
+            "year": "2019-20",
+            "description": "Learned how to care for lambs"
+        },
+        {
+            "name": "Horses",
+            "year": "2020-21",
+            "description": "Learned how to care for horses"
+        },
+        {
+            "name": "Lambs",
+            "year": "2020-21",
+            "description": "Learned how to care for lambs"
+        },
+        {
+            "name": "Lambs",
+            "year": "2021-22",
+            "description": "Learned how to care for lambs"
+        }
+    ],
     "section1": [
         {
           "year": "2019-20",

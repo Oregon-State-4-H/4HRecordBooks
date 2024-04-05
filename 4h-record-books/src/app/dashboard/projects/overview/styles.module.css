@@ -1,0 +1,28 @@
+.title {
+    font-size: 1.75rem;
+    padding: 10px;
+}
+
+.cardGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cardTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--bg-secondary);
+    min-width: 325px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30vw;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        display: none;
+    }
+}

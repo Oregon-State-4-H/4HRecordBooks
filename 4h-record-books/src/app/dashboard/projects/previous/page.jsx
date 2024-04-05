@@ -4,26 +4,28 @@ import ActionBar from '@/app/components/ActionBar';
 import classes from './styles.module.css';
 import Link from 'next/link';
 import demoData from '@/app/demoData.json';
+import BackNavBtn from '@/app/components/BackNavBtn';
+
 
 export default function Projects() {
   var cardsJson = demoData.projects;
 
   var cards = cardsJson.map((card, index) => {
     return (
-      <Link href={{pathname: "projects/overview"}} key={index} className={classes.card}>
+      <div key={index} className={classes.card}>
         <div className={classes.cardTitle}>{card.name}</div>
         <div className={classes.cardDescription}>{card.description}</div>
-      </Link>
+      </div>
     )
   })
 
   return (
     <main>
-      <ActionBar title="Projects" disableBack={true} />
+      <ActionBar title="Previous Projects" disableBack={false} />
       
       <div className={classes.header}>
-        <div className={classes.title}>Current Projects</div>
-        <Link href={{pathname: "projects/previous"}} className={classes.btn} id='previousBtn'>View Previous Projects</Link>
+        <BackNavBtn /> 
+        <div className={classes.title}>Previous Projects</div>
       </div>
 
       <div className={classes.cardContainer}>
