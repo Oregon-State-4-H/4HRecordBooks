@@ -496,5 +496,61 @@
             "year": "",
             "description": "Hunter Safety Certificate"
         }
+    ],
+    "feed": [
+        {
+            "_id": "7hskdh295owjfskidfhskfh",
+            "projectID": "5f3f3e3e3e3e3e3e3e3e3e3e",
+            "type": "Hay"
+        },
+        {
+            "_id": "73ulcvuhgwel5iufinqcuw",
+            "projectID": "5f3f3e3e3e3e3e3e3e3e3e3e",
+            "type": "Grain"
+        },
+        {
+            "_id": "eh542uj3khbnkjsgfufywea",
+            "projectID": "5f3f3e3e3e3e3e3e3e3e3e3e",
+            "type": "Alphalfa"
+        },
+        {
+            "_id": "ndmsf243nemj2345",
+            "projectID": "5f3f3e3e3e3e3e3e3e3e3e3e",
+            "type": "Corn"
+        }
+    ],
+    "feedPurchase": [
+        {
+            "projectID": "5f3f3e3e3e3e3e3e3e3e3e",
+            "feedId": "7hskdh295owjfskidfhskfh",
+            "date": "2020-01-01",
+            "amount": "30",
+            "cost": "400",
+            "unit": "Bales"
+        },
+        {
+            "projectID": "5f3f3e3e3e3e3e3e3e3e3e",
+            "feedId": "73ulcvuhgwel5iufinqcuw",
+            "date": "2020-01-01",
+            "amount": "75",
+            "cost": "100",
+            "unit": "Pounds"
+        },
+        {
+            "projectID": "5f3f3e3e3e3e3e3e3e3e3e",
+            "feedId": "eh542uj3khbnkjsgfufywea",
+            "date": "2020-01-01",
+            "amount": "20",
+            "cost": "300",
+            "unit": "Bales"
+        },
+        {
+            "projectID": "5f3f3e3e3e3e3e3e3e3e3e",
+            "feedId": "ndmsf243nemj2345",
+            "date": "2020-01-01",
+            "amount": "50",
+            "cost": "40",
+            "unit": "Pounds"
+        }
     ]
 }
