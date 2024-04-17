@@ -24,9 +24,16 @@ export default function Overview() {
             <div className={classes.cardContainer}>
                 <div className={classes.cardGroup}>
                     <Card title = "Animal Inventory and Purchases" />
-                    <Card title = "Equipment, Supplies, and Feed Inventory" />
+                    
+                    <Link href={{pathname: "overview/supplyInventory"}}>
+                        <Card title = "Equipment, Supplies, and Feed Inventory" />
+                    </Link>
+
                     <Card title = "Other Expenses" />
-                    <Card title = "Feed Record" />
+
+                    <Link href={{pathname: "overview/feedRecord"}}>
+                        <Card title = "Feed Record" />
+                    </Link>
                 </div>
             </div>
             

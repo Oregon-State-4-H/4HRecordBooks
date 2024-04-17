@@ -1,0 +1,31 @@
+.sectionHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.sectionTitle {
+    color: var(--text-primary);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+#addInfo {
+    margin-left: 5px;
+}
+
+.addInfoContainer {
+    font-size: 18px;
+    padding-top: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    right: 0;
+    left: 0;
+}
