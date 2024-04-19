@@ -13,27 +13,32 @@
         {
             "name": "Horses",
             "year": "2019-20",
-            "description": "Learned how to care for horses"
+            "description": "Learned how to care for horses",
+            "projectID": "ko0oijnbgyt65redswe3"
         },
         {
             "name": "Lambs",
             "year": "2019-20",
-            "description": "Learned how to care for lambs"
+            "description": "Learned how to care for lambs",
+            "projectID": "234567uikmnbvcdsdrtyuijk"
         },
         {
             "name": "Horses",
             "year": "2020-21",
-            "description": "Learned how to care for horses"
+            "description": "Learned how to care for horses",
+            "projectID": "ndldeue6dsoureyownv8ryn"
         },
         {
             "name": "Lambs",
             "year": "2020-21",
-            "description": "Learned how to care for lambs"
+            "description": "Learned how to care for lambs",
+            "projectID": "t38ekfchw73idejdywikdegwmd"
         },
         {
             "name": "Lambs",
             "year": "2021-22",
-            "description": "Learned how to care for lambs"
+            "description": "Learned how to care for lambs",
+            "projectID": "5f3f3e3e3e3e3e3e3e3e3e"
         }
     ],
     "section1": [
@@ -551,6 +556,37 @@
             "amount": "50",
             "cost": "40",
             "unit": "Pounds"
+        }
+    ],
+    "animals": [
+        {
+            "_id": "lskzhdspoofjlakh7w4o3e34r",
+            "projects": [
+                "ko0oijnbgyt65redswe3",
+                "ndldeue6dsoureyownv8ryn"
+            ],
+            "type": "Horse",
+            "name": "Buddy",
+            "dob": "2018-01-01"
+        },
+        {
+            "_id": "wiyqeoiwhkrfdiyre98302340",
+            "projects": [
+                "234567uikmnbvcdsdrtyuijk",
+                "t38ekfchw73idejdywikdegwmd"
+            ],
+            "type": "Lamb",
+            "name": "Lambchop",
+            "dob": "2019-01-01"
+        },
+        {
+            "_id": "wiyqeoiwhkrfdiyre98302340",
+            "projects": [
+                "5f3f3e3e3e3e3e3e3e3e3e"
+            ],
+            "type": "Lamb",
+            "name": "Gilbert",
+            "dob": "2021-01-01"
         }
     ]
 }
