@@ -5,7 +5,7 @@ import ActionBar from '@/app/components/ActionBar';
 import styles from './styles.module.css';
 import { IoMdAdd } from "react-icons/io";
 
-import demoData from "../../../demoData.json"
+import demoData from '@/app/demoData.json';
 
 function TableCard({ title, data, headers, handleClick }) {
   return (
