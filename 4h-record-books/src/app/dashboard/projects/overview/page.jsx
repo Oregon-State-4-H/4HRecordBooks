@@ -15,9 +15,7 @@ function Card(props) {
     )
 }
 
-function FormCard({ title, onClose, children, showModal }) {
-  console.log("????", showModal)
-
+function FormCard({ title, onClose, children }) {
   return (
     <div className={classes.overlay}>
       <div className={classes.formCard}>
@@ -70,14 +68,6 @@ export default function Overview() {
                     
                     <Link href={{pathname: "overview/supplyInventory"}}>
                         <Card title = "Equipment, Supplies, and Feed Inventory" />
-                    {/* <div handleClick={() => setShowModal(true)}>
-                        <Card title = "Equipment, Supplies, and Feed Inventory" />
-                        {showModal && (
-                            <FormCard onClose={() => setShowModal(false)}>
-                                <DropdownCard options={animalData} />
-                            </FormCard>
-                        )}
-                    </div> */}
                     </Link>
 
                     <Card title = "Other Expenses" />
@@ -85,12 +75,12 @@ export default function Overview() {
                     {/* <Link href={{pathname: "overview/feedRecord"}}> */}
                     <div onClick={() => setShowModal(true)}>
                       <Card title = "Feed Record" />
-                      {showModal && (
-                        <FormCard title="Select an Animal" onClose={handleClose} showModal={showModal}>
-                            <DropdownCard options={animalData} />
-                        </FormCard>
-                      )}
                     </div>
+                    {showModal && (
+                      <FormCard title="Select an Animal" onClose={() => setShowModal(false)}>
+                          <DropdownCard options={animalData} />
+                      </FormCard>
+                    )}
                     {/* </Link> */}
                 </div>
             </div>
