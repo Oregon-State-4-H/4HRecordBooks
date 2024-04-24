@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import demoData from '@/app/demoData.json';
 import BackNavBtn from '@/app/components/BackNavBtn';
+import { redirect } from "next/navigation";
 
 function Card(props) {
     var title = props.title;
@@ -15,41 +16,35 @@ function Card(props) {
     )
 }
 
-function FormCard({ title, onClose, children }) {
+function FormCard({ title, onClose, options }) {
+  const [data, setData] = useState(options[0]._id);
+
+  const onOptionChangeHandler = (event) => {
+    setData(event.target.value);
+  }
+
   return (
     <div className={classes.overlay}>
       <div className={classes.formCard}>
-        <h1>{title}</h1>
-        <button className={classes.closeBtn} onClick={onClose}>X</button>
-        <div className={classes.children}>
-          {children}
+        <div className={classes.formHeader}>
+          <span className={classes.formTitle}>{title}</span>
+          <button className={classes.closeBtn} onClick={onClose}>X</button>
         </div>
-        <button type="submit" className={classes.submitBtn}>Submit</button>
+
+        <select className={classes.dropdownBtn} onChange={onOptionChangeHandler}>
+          {options.map((options, index) => {
+            return (
+              <option key={index} value={options._id}>
+                {options.type} ({options.name})
+              </option>
+            )
+          })}
+        </select>
+
+        <Link href={{pathname: "overview/feedRecord", query: {id: data}}} className={classes.submitBtn}>Submit</Link>
       </div>
     </div>
   )
-}
-
-function DropdownCard(props) {
-    const [data, setData] = useState(undefined);
-    var options = props.options;
-  
-    const onOptionChangeHandler = (event) => {
-      setData(event.target.value);
-    }
-  
-    return (
-      <select className={classes.dropdownBtn} onChange={onOptionChangeHandler}>
-        <option>Select Animal</option>
-        {options.map((option, index) => {
-          return (
-            <option key={index}>
-              {option.type} ({option.name})
-            </option>
-          )
-        })}
-      </select>
-    )
 }
 
 export default function Overview() {
@@ -72,16 +67,12 @@ export default function Overview() {
 
                     <Card title = "Other Expenses" />
 
-                    {/* <Link href={{pathname: "overview/feedRecord"}}> */}
                     <div onClick={() => setShowModal(true)}>
                       <Card title = "Feed Record" />
                     </div>
                     {showModal && (
-                      <FormCard title="Select an Animal" onClose={() => setShowModal(false)}>
-                          <DropdownCard options={animalData} />
-                      </FormCard>
+                      <FormCard title="Select an Animal" onClose={() => setShowModal(false)} options={animalData} />
                     )}
-                    {/* </Link> */}
                 </div>
             </div>
         </main>

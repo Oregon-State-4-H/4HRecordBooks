@@ -37,7 +37,7 @@
 .formCard {
     background-color: var(--bg-secondary);
     position: absolute;
-    top: 15%;
+    top: 25%;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
@@ -49,10 +49,24 @@
     margin-right: auto;
 }
 
-.closeBtn {
+.formHeader {
+    width: 55vw;
     position: relative;
     display: flex;
-    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.formTitle {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.closeBtn {
     border: none;
     background-color: transparent;
     font-size: 18px;
@@ -64,7 +78,7 @@
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 15px;
-    width: 47vw;
+    width: 35vw;
 }
 
 .submitBtn {
@@ -72,13 +86,8 @@
     background: var(--beaver-orange);
     border-radius: 5px;
     padding: 5px;
-    margin-top: 20px;
+    text-align: center;
     width: 30vw;
-}
-
-.submitBtn:hover {
-    border: 1px solid var(--beaver-orange);
-    background: var(--beaver-orange);
 }
 
 @media screen and (max-width: 480px) {

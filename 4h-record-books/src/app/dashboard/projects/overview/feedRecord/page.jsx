@@ -1,36 +1,40 @@
 "use client";
 
 import classes from './styles.module.css';
-import { useState } from 'react';
-import demoData from "../../../../demoData.json"
+import { useState, useEffect } from 'react';
+import demoData from '@/app/demoData.json';
+import { IoMdAdd } from "react-icons/io";
 
-function DropdownCard(props) {
-    const [data, setData] = useState(undefined);
-    var options = props.options;
-  
-    const onOptionChangeHandler = (event) => {
-      setData(event.target.value);
+function TableCard({ id }) {
+  const animals = demoData.animals;
+  const [animalData, setAnimalData] = useState(undefined);
+
+  useEffect(() => {
+    if (id) {
+      let animalData = animals.find((animal) => animal._id === id);
+      if (animalData) {
+        setAnimalData(animalData);
+      }
     }
-  
-    return (
-      <select className={styles.dropdownBtn} onChange={onOptionChangeHandler}>
-        <option>Select Animal</option>
-        {options.map((option, index) => {
-          return (
-            <option key={index}>
-              {option}
-            </option>
-          )
-        })}
-      </select>
-    )
-  }
+  }, []);
 
-export default function FeedRecord() {
-    const [data, setData] = useState([]);
-    return (
-        <>
-            <h1>Hello World</h1>
-        </>
-    )
+  return (
+    <>
+      <div className={classes.sectionHeader}>
+        <span className={classes.sectionTitle}>{animalData?.type} {animalData?.name}</span>
+        <button className={classes.addInfoContainer}>
+          <IoMdAdd />
+          <span id="addInfo">Add Feeding Data</span>
+        </button>
+      </div>
+    </>
+  )
+}
+
+export default function FeedRecord({ searchParams: {id} }) {
+  return (
+    <>
+      <TableCard id={id} />
+    </>
+  )
 }
