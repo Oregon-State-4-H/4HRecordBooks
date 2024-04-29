@@ -1,0 +1,184 @@
+.animalName {
+    color: var(--text-primary);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+}
+
+.sectionHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    margin: 15px;
+}
+
+.sectionTitle {
+    color: var(--text-primary);
+    font-size: 1.25rem;
+}
+
+#addInfo {
+    margin-left: 5px;
+}
+
+.addInfoContainer {
+    font-size: 18px;
+    padding-top: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    right: 0;
+    left: 0;
+}
+
+.table {
+    width: 100%;
+    background-color: var(--bg-secondary);
+}
+
+.table th {
+    text-align: center;
+    background-color: var(--beaver-orange);
+}
+
+.table th, .table td {
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.formCard {
+    background-color: var(--bg-secondary);
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formHeader {
+    width: 55vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.formTitle {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.closeBtn {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.dropdownBtn {
+    background: darkgrey;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30vw;
+}
+
+.label {
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 10ch auto;
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.textInputBox {
+    padding: 10px 0px 10px 5px;
+    border: none;
+    width: 30vw;
+    border-bottom: 1px solid lightgrey;
+    background: none;
+}
+
+.submitBtn {
+    border: 1px solid var(--beaver-orange);
+    background: var(--beaver-orange);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    width: 30vw;
+}
+
+@media screen and (max-width: 480px) {
+    .animalName {
+        font-size: 1.25rem;
+    }
+
+    .sectionHeader {
+        width: 100%;
+    }
+
+    .sectionTitle {
+        font-size: 1.15rem;
+    }
+
+    .addInfoContainer {
+        font-size: 12px;
+        width: 50%;
+        left: 45%;
+    }
+
+    .formCard {
+        top: 15%;
+        padding: 25px;
+        width: 90%;
+    }
+
+    .formHeader {
+        width: 100%;
+    }
+
+    .dropdownBtn {
+        width: 100%;
+    }
+
+    .submitBtn {
+        width: 92%;
+    }
+
+    .label {
+        grid-template-columns: 10ch auto;
+    }
+
+    .textInputBox {
+        width: 100%;
+    }
+}

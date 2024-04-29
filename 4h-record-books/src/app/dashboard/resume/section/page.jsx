@@ -19,7 +19,7 @@ function TableCard({ title, data, headers, handleClick }) {
       </div>
 
       <table className={styles.table}>
-        <thead >
+        <thead>
           <tr>
             {headers.map((header, headerID) => (
               <th key={headerID}>{header}</th>

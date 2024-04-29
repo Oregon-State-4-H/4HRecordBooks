@@ -507,31 +507,39 @@
             "_id": "7hskdh295owjfskidfhskfh",
             "animalID": "lskzhdspoofjlakh7w4o3e34r",
             "projectID": "5f3f3e3e3e3e3e3e3e3e3e3e",
-            "type": "Hay"
+            "type": "Hay",
+            "amount": "1.5",
+            "unit": "Pounds"
         },
         {
             "_id": "73ulcvuhgwel5iufinqcuw",
             "animalID": "lskzhdspoofjlakh7w4o3e34r",
             "projectID": "5f3f3e3e3e3e3e3e3e3e3e3e",
-            "type": "Grain"
+            "type": "Grain",
+            "amount": "1.5",
+            "unit": "Pounds"
         },
         {
             "_id": "eh542uj3khbnkjsgfufywea",
             "animalID": "lskzhdspoofjlakh7w4o3e34r",
             "projectID": "5f3f3e3e3e3e3e3e3e3e3e3e",
-            "type": "Alphalfa"
+            "type": "Alphalfa",
+            "amount": "1.5",
+            "unit": "Pounds"
         },
         {
             "_id": "ndmsf243nemj2345",
             "animalID": "lskzhdspoofjlakh7w4o3e34r",
             "projectID": "5f3f3e3e3e3e3e3e3e3e3e3e",
-            "type": "Corn"
+            "type": "Corn",
+            "amount": "1.5",
+            "unit": "Pounds"
         }
     ],
     "feedPurchase": [
         {
             "projectID": "5f3f3e3e3e3e3e3e3e3e3e",
-            "feedId": "7hskdh295owjfskidfhskfh",
+            "feedID": "7hskdh295owjfskidfhskfh",
             "date": "2020-01-01",
             "amount": "30",
             "cost": "400",
@@ -539,7 +547,7 @@
         },
         {
             "projectID": "5f3f3e3e3e3e3e3e3e3e3e",
-            "feedId": "73ulcvuhgwel5iufinqcuw",
+            "feedID": "73ulcvuhgwel5iufinqcuw",
             "date": "2020-01-01",
             "amount": "75",
             "cost": "100",
@@ -547,7 +555,7 @@
         },
         {
             "projectID": "5f3f3e3e3e3e3e3e3e3e3e",
-            "feedId": "eh542uj3khbnkjsgfufywea",
+            "feedID": "eh542uj3khbnkjsgfufywea",
             "date": "2020-01-01",
             "amount": "20",
             "cost": "300",
@@ -555,7 +563,7 @@
         },
         {
             "projectID": "5f3f3e3e3e3e3e3e3e3e3e",
-            "feedId": "ndmsf243nemj2345",
+            "feedID": "ndmsf243nemj2345",
             "date": "2020-01-01",
             "amount": "50",
             "cost": "40",
@@ -570,7 +578,7 @@
                 "ndldeue6dsoureyownv8ryn"
             ],
             "type": "Horse",
-            "name": "Buddy",
+            "name": "Captain Long Face",
             "dob": "2018-01-01"
         },
         {
