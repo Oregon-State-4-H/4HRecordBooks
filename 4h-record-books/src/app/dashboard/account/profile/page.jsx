@@ -26,17 +26,14 @@ function NumberCard(props) {
         <label className={classes.label}>
             {text}
             <input className={classes.textInputBox} type="date" value={num} onChange={event => {setNum(event.target.value)}} placeholder={numInput} />
-            {/* <input className={classes.textInputBox} type="number" value={num} onChange={event => {setNum(event.target.value)}} placeholder={numInput} /> */}
         </label>
     )
 }
 
 export default function Profile() {
-
     return (
         <main>
             <ActionBar title="Edit Profile" />
-            {/* <h1><b>Edit Profile</b></h1> */}
             <form className={classes.profileForm}>
                 <Card text="First Name" input="John" />
                 <Card text="Middle Name Initial" input="J" />

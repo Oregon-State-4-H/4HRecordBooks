@@ -109,7 +109,7 @@ export default function FeedRecord({ searchParams: {id} }) {
         <span className={classes.sectionTitle}>Daily Feed Log</span>
         <button className={classes.addInfoContainer} onClick={() => setShowModal(true)}>
           <IoMdAdd />
-          <span id="addInfo">Add Feeding Data</span>
+          <span id={classes.addInfo}>Add Feeding Data</span>
         </button>
       </div>
 

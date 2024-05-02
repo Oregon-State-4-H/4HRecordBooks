@@ -1,6 +1,31 @@
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    margin: 15px;
+}
+
 .title {
-    font-size: 1.75rem;
-    padding: 10px;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+}
+
+#editInfo {
+    margin-left: 5px;
+}
+
+.editInfoContainer {
+    font-size: 16px;
+    padding-top: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    right: 0;
+    left: 0;
 }
 
 .cardGroup {
@@ -49,6 +74,10 @@
     margin-right: auto;
 }
 
+#editInfoFormCard {
+    top: 15%;
+}
+
 .formHeader {
     width: 55vw;
     position: relative;
@@ -81,12 +110,45 @@
     width: 35vw;
 }
 
+.label {
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 10ch auto;
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.formInput {
+    padding: 10px 0px 10px 5px;
+    border: none;
+    width: 30vw;
+    border-bottom: 1px solid lightgrey;
+    background: none;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+#updateInfoSubmitBtn, #cancelInfoSubmitBtn {
+    padding: 5px;
+    width: 20vw;
+    margin: 15px;
+}
+
 .submitBtn {
     border: 1px solid var(--beaver-orange);
     background: var(--beaver-orange);
     border-radius: 5px;
     padding: 5px;
     text-align: center;
+}
+
+#feedRecordSubmitBtn {
     width: 30vw;
 }
 
