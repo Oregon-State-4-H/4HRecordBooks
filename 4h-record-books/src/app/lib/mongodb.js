@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 const connectDB = async () => {
   try {
     if (mongoose.connection.readyState === 0) {
-      await mongoose.connect('mongodb+srv://test4H:test4H@cluster0.xlktqhe.mongodb.net/4HRecordBooks');
+      await mongoose.connect(process.env.MONGODB_URI);
       console.log("db connected");
     }
     return mongoose.connection; // Return the connection object

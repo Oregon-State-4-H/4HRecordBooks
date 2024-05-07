@@ -1,12 +1,13 @@
+"use client"
+
 import ActionBar from '@/app/components/ActionBar';
 import classes from './styles.module.css';
 import Link from 'next/link';
-
-
-import { getSession } from "@auth0/nextjs-auth0";
+import { getUserProfile } from '@/app/_db/srvactions/UserProfile';
+import { useUser } from '@auth0/nextjs-auth0/client';
 import { redirect } from "next/navigation";
-import connectDB from "../../lib/mongodb.js";
-import { ObjectId } from "mongodb";
+import { useState, useEffect } from 'react';
+
 
 function Card(props) {
   var title = props.title;
@@ -19,28 +20,33 @@ function Card(props) {
   )
 }
 
-export default async function Account() {
+export default function Account() {
+  const { user, error, isLoading } = useUser();
 
-  const session = await getSession();
+  const [userDoc, setUserDoc] = useState(null);
 
-  if (!session?.user) {
+
+  useEffect(() => {
+    try {
+      getUserProfile(user.sub.substring(6))
+        .then((data) => {
+          setUserDoc(data);
+        });
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+    }
+  }, []);
+
+  if (!user) {
     redirect("../api/auth/login");
   }
-
-  
-  const userID = ObjectId.createFromHexString(session.user.sub.substring(6));
-  const db = await connectDB();
-  const user = await db.collection('users').findOne(userID);
-  console.log("user:", user)
-
-
-  
 
   return (
     <main>
       <ActionBar title="Account" disableBack={true} />
-      <h1><b>{user.given_name} {user.family_name}</b></h1>
-      <p>{user.email}</p>
+
+      <h1><b>{userDoc?.first_name} {userDoc?.last_name_initial}</b></h1>
+      <p>{userDoc?.email}</p>
 
       <br></br>
 
